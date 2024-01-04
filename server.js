@@ -32,7 +32,16 @@ const limiter = rateLimit({
   });
 
 // Middleware
-app.use(cors());
+const allowedOrigins = ['http://localhost:'+port];
+app.use(cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
+  }));
 app.use(limiter);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -44,7 +53,6 @@ app.use(passport.session());
 // Routes
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api", require("./routes/notes"));
-
 // Swagger documentation setup
 const options = {
     definition: {
@@ -61,7 +69,7 @@ const options = {
       },
       servers: [
         {
-          url: "http://localhost:3000",
+          url: "http://localhost:"+port,
         },
       ],
       security: [

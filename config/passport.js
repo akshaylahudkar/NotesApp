@@ -6,21 +6,23 @@ const ExtractJwt = require('passport-jwt').ExtractJwt;
 const bcrypt = require('bcryptjs');
 const User = require('../models/User');
 
-// JWT Strategy
 const jwtOptions = {
-  jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-  secretOrKey: process.env.JWT_SECRET,
-};
-passport.use(new JwtStrategy(jwtOptions, async (jwt_payload, done) => {
+    jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
+    secretOrKey: process.env.JWT_SECRET,
+    passReqToCallback: true,
+  };
+  
+  passport.use(new JwtStrategy(jwtOptions, async (req, jwt_payload, done) => {
     try {
       const user = await User.findById(jwt_payload.userId).exec();
-  
       if (user) {
+        req.user = user; // Optionally attach the user to the request object
         return done(null, user);
       } else {
         return done(null, false);
       }
     } catch (err) {
+      console.log(err);
       return done(err, false);
     }
   }));
@@ -33,8 +35,6 @@ const localOptions = {
 
 passport.use(new LocalStrategy(localOptions, async (username, password, done) => {
   try {
-    console.log('username', username)
-    console.log('password', password)
     const user = await User.findOne({ username });
 
     if (!user) {
@@ -47,7 +47,7 @@ passport.use(new LocalStrategy(localOptions, async (username, password, done) =>
       return done(null, false, { message: 'Incorrect password.' });
     }
 
-    return done(null, user);
+    return done(null, user); // Pass the user to the done callback
   } catch (err) {
     return done(err);
   }

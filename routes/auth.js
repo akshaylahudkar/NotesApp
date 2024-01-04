@@ -30,6 +30,10 @@ const User = require("../models/User");
  *                 type: string
  *               password:
  *                 type: string
+ *                 format: password
+ *               email:
+ *                 type: string
+ *                 format: email
  *     responses:
  *       200:
  *         description: User created successfully
@@ -42,7 +46,7 @@ router.post(
   "/signup",
   body("username").exists().notEmpty().withMessage("Username is required"),
   body("password").notEmpty().withMessage("Password is required"),
-  body("email").notEmpty().withMessage("Email is required"),
+  body("email").notEmpty().isEmail().withMessage("Email is required"),
   async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -82,7 +86,7 @@ router.post(
  *                 type: string
  *     responses:
  *       200:
- *         description: Access token generated successfully
+ *         description: Access token and refresh token generated successfully
  *       400:
  *         description: Validation error
  *       401:
@@ -107,26 +111,75 @@ router.post(
           return res.status(401).json({ message: 'Unauthorized - Wrong username or password' });
         }
   
-        req.logIn(user, { session: false }, async (err) => {
-          if (err) {
-            return next(err);
-          }
+        try {
+          // Generate refresh token
+          const refreshToken = generateRefreshToken();
+            
+          // Save the refresh token on the client side or in a secure cookie
+          res.cookie('refreshToken', refreshToken, { httpOnly: true, secure: true });
   
-          try {
-            // Use your own logic to fetch user data or omit this part if not needed
-            // const foundUser = await User.findOne({ username: user.username });
+          // Generate access token
+          const accessToken = generateAccessToken(user._id);
   
-            // Issue a JWT token
-            const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET, {
-              expiresIn: '1h',
-            });
-  
-            res.json({ accessToken: token });
-          } catch (err) {
-            res.status(500).json({ error: err.message });
-          }
-        });
+          // Respond with access token and refresh token
+          res.json({ accessToken, refreshToken });
+        } catch (err) {
+          res.status(500).json({ error: err.message });
+        }
       })(req, res, next);
     }
   );
+/**
+ * @swagger
+ * /api/auth/refresh-token:
+ *   post:
+ *     summary: Refresh the access token using the refresh token
+ *     tags: [Authentication]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               refreshToken:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: New access token generated successfully
+ *       401:
+ *         description: Invalid refresh token
+ */
+router.post('/refresh-token', async (req, res) => {
+  const refreshToken = req.cookies.refreshToken;
+
+  if (!refreshToken) {
+    return res.status(401).json({ message: 'Refresh token is required.' });
+  }
+
+  // Validate the refresh token
+  try {
+    const decoded = jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET);
+
+    // Use the decoded information to generate a new access token
+    const newAccessToken = generateAccessToken(decoded.userId);
+
+    // Respond with the new access token
+    res.json({ accessToken: newAccessToken });
+  } catch (err) {
+    return res.status(401).json({ message: 'Invalid refresh token.' });
+  }
+});
+
+// Function to generate a new access token
+function generateAccessToken(userId) {
+  const payload = { userId };
+  return jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '30m' }); // Set an appropriate expiration time
+}
+
+// Function to generate a refresh token
+function generateRefreshToken() {
+  return jwt.sign({}, process.env.REFRESH_TOKEN_SECRET, { expiresIn: '7d' }); // Set an appropriate expiration time
+}
+
 module.exports = router;

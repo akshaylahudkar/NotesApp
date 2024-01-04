@@ -1,15 +1,32 @@
 version: '3.8'
 services:
- mongodb:
-   image: mongo
-   restart: always
-   environment:
-     MONGO_INITDB_ROOT_USERNAME: root
-     MONGO_INITDB_ROOT_PASSWORD: example
-   ports:
-     - 27017:27017
-   volumes:
-     - mongodbdata:/data/db
+  app:
+    container_name: app
+    image: app
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    ports:
+      - 3004:3004
+    environment:
+      - MONGODB_URI=mongodb://root:example@mongodb:27017
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodbdata:/data/db
 
 volumes:
- mongodbdata:
+  mongodbdata:
+
+
