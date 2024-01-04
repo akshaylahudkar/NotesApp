@@ -1,0 +1,2361 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/akshaylahudkar/.nvm/versions/node/v6.7.0/bin/node',
+1 verbose cli   '/Users/akshaylahudkar/.nvm/versions/node/v6.7.0/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'artillery@latest' ]
+2 info using npm@3.10.3
+3 info using node@v6.7.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData artillery@latest
+8 silly fetchNamedPackageData artillery
+9 silly mapToRegistry name artillery
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'artillery',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'artillery',
+12 silly mapToRegistry   name: 'artillery',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/artillery
+14 verbose request uri https://registry.npmjs.org/artillery
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 5:37:51 PM
+17 verbose request id 010bebd8588e0620
+18 verbose etag W/"144cb7346d58186dc2a5d4ec842e83b9"
+19 verbose lastModified Wed, 03 Jan 2024 17:22:17 GMT
+20 http request GET https://registry.npmjs.org/artillery
+21 http 304 https://registry.npmjs.org/artillery
+22 verbose headers { date: 'Thu, 04 Jan 2024 12:07:51 GMT',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'cf-ray': '84035d155f801d31-BLR',
+22 verbose headers   'cf-cache-status': 'HIT',
+22 verbose headers   age: '55',
+22 verbose headers   'cache-control': 'public, max-age=300',
+22 verbose headers   etag: '"144cb7346d58186dc2a5d4ec842e83b9"',
+22 verbose headers   'last-modified': 'Wed, 03 Jan 2024 17:22:17 GMT',
+22 verbose headers   vary: 'Accept-Encoding',
+22 verbose headers   server: 'cloudflare' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Thu, 04 Jan 2024 12:07:51 GMT',
+23 silly get     connection: 'keep-alive',
+23 silly get     'cf-ray': '84035d155f801d31-BLR',
+23 silly get     'cf-cache-status': 'HIT',
+23 silly get     age: '55',
+23 silly get     'cache-control': 'public, max-age=300',
+23 silly get     etag: '"144cb7346d58186dc2a5d4ec842e83b9"',
+23 silly get     'last-modified': 'Wed, 03 Jan 2024 17:22:17 GMT',
+23 silly get     vary: 'Accept-Encoding',
+23 silly get     server: 'cloudflare' } ]
+24 verbose etag https://registry.npmjs.org/artillery from cache
+25 verbose get saving artillery to /Users/akshaylahudkar/.npm/registry.npmjs.org/artillery/.cache.json
+26 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule artillery@2.0.3 checking installable status
+40 silly cache add args [ 'artillery@latest', null ]
+41 verbose cache add spec artillery@latest
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'artillery@latest',
+42 silly cache add   scope: null,
+42 silly cache add   escapedName: 'artillery',
+42 silly cache add   name: 'artillery',
+42 silly cache add   rawSpec: 'latest',
+42 silly cache add   spec: 'latest',
+42 silly cache add   type: 'tag' }
+43 silly addNamed artillery@latest
+44 verbose addNamed "latest" is being treated as a dist-tag for artillery
+45 info addNameTag [ 'artillery', 'latest' ]
+46 silly mapToRegistry name artillery
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'artillery',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   escapedName: 'artillery',
+49 silly mapToRegistry   name: 'artillery',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/artillery
+51 verbose addNameTag registry:https://registry.npmjs.org/artillery not in flight; fetching
+52 verbose get https://registry.npmjs.org/artillery not expired, no request
+53 silly addNameTag next cb for artillery with tag latest
+54 silly addNamed artillery@2.0.3
+55 verbose addNamed "2.0.3" is a plain semver version for artillery
+56 silly cache afterAdd artillery@2.0.3
+57 verbose afterAdd /Users/akshaylahudkar/.npm/artillery/2.0.3/package/package.json not in flight; writing
+58 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+59 verbose afterAdd /Users/akshaylahudkar/.npm/artillery/2.0.3/package/package.json written
+60 silly fetchNamedPackageData @artilleryio/int-commons
+61 silly mapToRegistry name @artilleryio/int-commons
+62 silly mapToRegistry scope (from package name) @artilleryio
+63 verbose mapToRegistry no registry URL found in name for scope @artilleryio
+64 silly mapToRegistry using default registry
+65 silly mapToRegistry registry https://registry.npmjs.org/
+66 silly mapToRegistry data Result {
+66 silly mapToRegistry   raw: '@artilleryio/int-commons',
+66 silly mapToRegistry   scope: '@artilleryio',
+66 silly mapToRegistry   escapedName: '@artilleryio%2fint-commons',
+66 silly mapToRegistry   name: '@artilleryio/int-commons',
+66 silly mapToRegistry   rawSpec: '',
+66 silly mapToRegistry   spec: 'latest',
+66 silly mapToRegistry   type: 'tag' }
+67 silly mapToRegistry uri https://registry.npmjs.org/@artilleryio%2fint-commons
+68 silly fetchNamedPackageData @artilleryio/int-core
+69 silly mapToRegistry name @artilleryio/int-core
+70 silly mapToRegistry scope (from package name) @artilleryio
+71 verbose mapToRegistry no registry URL found in name for scope @artilleryio
+72 silly mapToRegistry using default registry
+73 silly mapToRegistry registry https://registry.npmjs.org/
+74 silly mapToRegistry data Result {
+74 silly mapToRegistry   raw: '@artilleryio/int-core',
+74 silly mapToRegistry   scope: '@artilleryio',
+74 silly mapToRegistry   escapedName: '@artilleryio%2fint-core',
+74 silly mapToRegistry   name: '@artilleryio/int-core',
+74 silly mapToRegistry   rawSpec: '',
+74 silly mapToRegistry   spec: 'latest',
+74 silly mapToRegistry   type: 'tag' }
+75 silly mapToRegistry uri https://registry.npmjs.org/@artilleryio%2fint-core
+76 silly fetchNamedPackageData @aws-sdk/credential-providers
+77 silly mapToRegistry name @aws-sdk/credential-providers
+78 silly mapToRegistry scope (from package name) @aws-sdk
+79 verbose mapToRegistry no registry URL found in name for scope @aws-sdk
+80 silly mapToRegistry using default registry
+81 silly mapToRegistry registry https://registry.npmjs.org/
+82 silly mapToRegistry data Result {
+82 silly mapToRegistry   raw: '@aws-sdk/credential-providers',
+82 silly mapToRegistry   scope: '@aws-sdk',
+82 silly mapToRegistry   escapedName: '@aws-sdk%2fcredential-providers',
+82 silly mapToRegistry   name: '@aws-sdk/credential-providers',
+82 silly mapToRegistry   rawSpec: '',
+82 silly mapToRegistry   spec: 'latest',
+82 silly mapToRegistry   type: 'tag' }
+83 silly mapToRegistry uri https://registry.npmjs.org/@aws-sdk%2fcredential-providers
+84 silly fetchNamedPackageData @oclif/core
+85 silly mapToRegistry name @oclif/core
+86 silly mapToRegistry scope (from package name) @oclif
+87 verbose mapToRegistry no registry URL found in name for scope @oclif
+88 silly mapToRegistry using default registry
+89 silly mapToRegistry registry https://registry.npmjs.org/
+90 silly mapToRegistry data Result {
+90 silly mapToRegistry   raw: '@oclif/core',
+90 silly mapToRegistry   scope: '@oclif',
+90 silly mapToRegistry   escapedName: '@oclif%2fcore',
+90 silly mapToRegistry   name: '@oclif/core',
+90 silly mapToRegistry   rawSpec: '',
+90 silly mapToRegistry   spec: 'latest',
+90 silly mapToRegistry   type: 'tag' }
+91 silly mapToRegistry uri https://registry.npmjs.org/@oclif%2fcore
+92 silly fetchNamedPackageData @oclif/plugin-help
+93 silly mapToRegistry name @oclif/plugin-help
+94 silly mapToRegistry scope (from package name) @oclif
+95 verbose mapToRegistry no registry URL found in name for scope @oclif
+96 silly mapToRegistry using default registry
+97 silly mapToRegistry registry https://registry.npmjs.org/
+98 silly mapToRegistry data Result {
+98 silly mapToRegistry   raw: '@oclif/plugin-help',
+98 silly mapToRegistry   scope: '@oclif',
+98 silly mapToRegistry   escapedName: '@oclif%2fplugin-help',
+98 silly mapToRegistry   name: '@oclif/plugin-help',
+98 silly mapToRegistry   rawSpec: '',
+98 silly mapToRegistry   spec: 'latest',
+98 silly mapToRegistry   type: 'tag' }
+99 silly mapToRegistry uri https://registry.npmjs.org/@oclif%2fplugin-help
+100 silly fetchNamedPackageData @oclif/plugin-not-found
+101 silly mapToRegistry name @oclif/plugin-not-found
+102 silly mapToRegistry scope (from package name) @oclif
+103 verbose mapToRegistry no registry URL found in name for scope @oclif
+104 silly mapToRegistry using default registry
+105 silly mapToRegistry registry https://registry.npmjs.org/
+106 silly mapToRegistry data Result {
+106 silly mapToRegistry   raw: '@oclif/plugin-not-found',
+106 silly mapToRegistry   scope: '@oclif',
+106 silly mapToRegistry   escapedName: '@oclif%2fplugin-not-found',
+106 silly mapToRegistry   name: '@oclif/plugin-not-found',
+106 silly mapToRegistry   rawSpec: '',
+106 silly mapToRegistry   spec: 'latest',
+106 silly mapToRegistry   type: 'tag' }
+107 silly mapToRegistry uri https://registry.npmjs.org/@oclif%2fplugin-not-found
+108 silly fetchNamedPackageData archiver
+109 silly mapToRegistry name archiver
+110 silly mapToRegistry using default registry
+111 silly mapToRegistry registry https://registry.npmjs.org/
+112 silly mapToRegistry data Result {
+112 silly mapToRegistry   raw: 'archiver',
+112 silly mapToRegistry   scope: null,
+112 silly mapToRegistry   escapedName: 'archiver',
+112 silly mapToRegistry   name: 'archiver',
+112 silly mapToRegistry   rawSpec: '',
+112 silly mapToRegistry   spec: 'latest',
+112 silly mapToRegistry   type: 'tag' }
+113 silly mapToRegistry uri https://registry.npmjs.org/archiver
+114 silly fetchNamedPackageData artillery-engine-playwright
+115 silly mapToRegistry name artillery-engine-playwright
+116 silly mapToRegistry using default registry
+117 silly mapToRegistry registry https://registry.npmjs.org/
+118 silly mapToRegistry data Result {
+118 silly mapToRegistry   raw: 'artillery-engine-playwright',
+118 silly mapToRegistry   scope: null,
+118 silly mapToRegistry   escapedName: 'artillery-engine-playwright',
+118 silly mapToRegistry   name: 'artillery-engine-playwright',
+118 silly mapToRegistry   rawSpec: '',
+118 silly mapToRegistry   spec: 'latest',
+118 silly mapToRegistry   type: 'tag' }
+119 silly mapToRegistry uri https://registry.npmjs.org/artillery-engine-playwright
+120 silly fetchNamedPackageData artillery-plugin-apdex
+121 silly mapToRegistry name artillery-plugin-apdex
+122 silly mapToRegistry using default registry
+123 silly mapToRegistry registry https://registry.npmjs.org/
+124 silly mapToRegistry data Result {
+124 silly mapToRegistry   raw: 'artillery-plugin-apdex',
+124 silly mapToRegistry   scope: null,
+124 silly mapToRegistry   escapedName: 'artillery-plugin-apdex',
+124 silly mapToRegistry   name: 'artillery-plugin-apdex',
+124 silly mapToRegistry   rawSpec: '',
+124 silly mapToRegistry   spec: 'latest',
+124 silly mapToRegistry   type: 'tag' }
+125 silly mapToRegistry uri https://registry.npmjs.org/artillery-plugin-apdex
+126 silly fetchNamedPackageData artillery-plugin-ensure
+127 silly mapToRegistry name artillery-plugin-ensure
+128 silly mapToRegistry using default registry
+129 silly mapToRegistry registry https://registry.npmjs.org/
+130 silly mapToRegistry data Result {
+130 silly mapToRegistry   raw: 'artillery-plugin-ensure',
+130 silly mapToRegistry   scope: null,
+130 silly mapToRegistry   escapedName: 'artillery-plugin-ensure',
+130 silly mapToRegistry   name: 'artillery-plugin-ensure',
+130 silly mapToRegistry   rawSpec: '',
+130 silly mapToRegistry   spec: 'latest',
+130 silly mapToRegistry   type: 'tag' }
+131 silly mapToRegistry uri https://registry.npmjs.org/artillery-plugin-ensure
+132 silly fetchNamedPackageData artillery-plugin-expect
+133 silly mapToRegistry name artillery-plugin-expect
+134 silly mapToRegistry using default registry
+135 silly mapToRegistry registry https://registry.npmjs.org/
+136 silly mapToRegistry data Result {
+136 silly mapToRegistry   raw: 'artillery-plugin-expect',
+136 silly mapToRegistry   scope: null,
+136 silly mapToRegistry   escapedName: 'artillery-plugin-expect',
+136 silly mapToRegistry   name: 'artillery-plugin-expect',
+136 silly mapToRegistry   rawSpec: '',
+136 silly mapToRegistry   spec: 'latest',
+136 silly mapToRegistry   type: 'tag' }
+137 silly mapToRegistry uri https://registry.npmjs.org/artillery-plugin-expect
+138 silly fetchNamedPackageData artillery-plugin-fake-data
+139 silly mapToRegistry name artillery-plugin-fake-data
+140 silly mapToRegistry using default registry
+141 silly mapToRegistry registry https://registry.npmjs.org/
+142 silly mapToRegistry data Result {
+142 silly mapToRegistry   raw: 'artillery-plugin-fake-data',
+142 silly mapToRegistry   scope: null,
+142 silly mapToRegistry   escapedName: 'artillery-plugin-fake-data',
+142 silly mapToRegistry   name: 'artillery-plugin-fake-data',
+142 silly mapToRegistry   rawSpec: '',
+142 silly mapToRegistry   spec: 'latest',
+142 silly mapToRegistry   type: 'tag' }
+143 silly mapToRegistry uri https://registry.npmjs.org/artillery-plugin-fake-data
+144 silly fetchNamedPackageData artillery-plugin-metrics-by-endpoint
+145 silly mapToRegistry name artillery-plugin-metrics-by-endpoint
+146 silly mapToRegistry using default registry
+147 silly mapToRegistry registry https://registry.npmjs.org/
+148 silly mapToRegistry data Result {
+148 silly mapToRegistry   raw: 'artillery-plugin-metrics-by-endpoint',
+148 silly mapToRegistry   scope: null,
+148 silly mapToRegistry   escapedName: 'artillery-plugin-metrics-by-endpoint',
+148 silly mapToRegistry   name: 'artillery-plugin-metrics-by-endpoint',
+148 silly mapToRegistry   rawSpec: '',
+148 silly mapToRegistry   spec: 'latest',
+148 silly mapToRegistry   type: 'tag' }
+149 silly mapToRegistry uri https://registry.npmjs.org/artillery-plugin-metrics-by-endpoint
+150 silly fetchNamedPackageData artillery-plugin-publish-metrics
+151 silly mapToRegistry name artillery-plugin-publish-metrics
+152 silly mapToRegistry using default registry
+153 silly mapToRegistry registry https://registry.npmjs.org/
+154 silly mapToRegistry data Result {
+154 silly mapToRegistry   raw: 'artillery-plugin-publish-metrics',
+154 silly mapToRegistry   scope: null,
+154 silly mapToRegistry   escapedName: 'artillery-plugin-publish-metrics',
+154 silly mapToRegistry   name: 'artillery-plugin-publish-metrics',
+154 silly mapToRegistry   rawSpec: '',
+154 silly mapToRegistry   spec: 'latest',
+154 silly mapToRegistry   type: 'tag' }
+155 silly mapToRegistry uri https://registry.npmjs.org/artillery-plugin-publish-metrics
+156 silly fetchNamedPackageData async
+157 silly mapToRegistry name async
+158 silly mapToRegistry using default registry
+159 silly mapToRegistry registry https://registry.npmjs.org/
+160 silly mapToRegistry data Result {
+160 silly mapToRegistry   raw: 'async',
+160 silly mapToRegistry   scope: null,
+160 silly mapToRegistry   escapedName: 'async',
+160 silly mapToRegistry   name: 'async',
+160 silly mapToRegistry   rawSpec: '',
+160 silly mapToRegistry   spec: 'latest',
+160 silly mapToRegistry   type: 'tag' }
+161 silly mapToRegistry uri https://registry.npmjs.org/async
+162 silly fetchNamedPackageData aws-sdk
+163 silly mapToRegistry name aws-sdk
+164 silly mapToRegistry using default registry
+165 silly mapToRegistry registry https://registry.npmjs.org/
+166 silly mapToRegistry data Result {
+166 silly mapToRegistry   raw: 'aws-sdk',
+166 silly mapToRegistry   scope: null,
+166 silly mapToRegistry   escapedName: 'aws-sdk',
+166 silly mapToRegistry   name: 'aws-sdk',
+166 silly mapToRegistry   rawSpec: '',
+166 silly mapToRegistry   spec: 'latest',
+166 silly mapToRegistry   type: 'tag' }
+167 silly mapToRegistry uri https://registry.npmjs.org/aws-sdk
+168 silly fetchNamedPackageData chalk
+169 silly mapToRegistry name chalk
+170 silly mapToRegistry using default registry
+171 silly mapToRegistry registry https://registry.npmjs.org/
+172 silly mapToRegistry data Result {
+172 silly mapToRegistry   raw: 'chalk',
+172 silly mapToRegistry   scope: null,
+172 silly mapToRegistry   escapedName: 'chalk',
+172 silly mapToRegistry   name: 'chalk',
+172 silly mapToRegistry   rawSpec: '',
+172 silly mapToRegistry   spec: 'latest',
+172 silly mapToRegistry   type: 'tag' }
+173 silly mapToRegistry uri https://registry.npmjs.org/chalk
+174 silly fetchNamedPackageData ci-info
+175 silly mapToRegistry name ci-info
+176 silly mapToRegistry using default registry
+177 silly mapToRegistry registry https://registry.npmjs.org/
+178 silly mapToRegistry data Result {
+178 silly mapToRegistry   raw: 'ci-info',
+178 silly mapToRegistry   scope: null,
+178 silly mapToRegistry   escapedName: 'ci-info',
+178 silly mapToRegistry   name: 'ci-info',
+178 silly mapToRegistry   rawSpec: '',
+178 silly mapToRegistry   spec: 'latest',
+178 silly mapToRegistry   type: 'tag' }
+179 silly mapToRegistry uri https://registry.npmjs.org/ci-info
+180 silly fetchNamedPackageData cli-table3
+181 silly mapToRegistry name cli-table3
+182 silly mapToRegistry using default registry
+183 silly mapToRegistry registry https://registry.npmjs.org/
+184 silly mapToRegistry data Result {
+184 silly mapToRegistry   raw: 'cli-table3',
+184 silly mapToRegistry   scope: null,
+184 silly mapToRegistry   escapedName: 'cli-table3',
+184 silly mapToRegistry   name: 'cli-table3',
+184 silly mapToRegistry   rawSpec: '',
+184 silly mapToRegistry   spec: 'latest',
+184 silly mapToRegistry   type: 'tag' }
+185 silly mapToRegistry uri https://registry.npmjs.org/cli-table3
+186 silly fetchNamedPackageData cross-spawn
+187 silly mapToRegistry name cross-spawn
+188 silly mapToRegistry using default registry
+189 silly mapToRegistry registry https://registry.npmjs.org/
+190 silly mapToRegistry data Result {
+190 silly mapToRegistry   raw: 'cross-spawn',
+190 silly mapToRegistry   scope: null,
+190 silly mapToRegistry   escapedName: 'cross-spawn',
+190 silly mapToRegistry   name: 'cross-spawn',
+190 silly mapToRegistry   rawSpec: '',
+190 silly mapToRegistry   spec: 'latest',
+190 silly mapToRegistry   type: 'tag' }
+191 silly mapToRegistry uri https://registry.npmjs.org/cross-spawn
+192 silly fetchNamedPackageData csv-parse
+193 silly mapToRegistry name csv-parse
+194 silly mapToRegistry using default registry
+195 silly mapToRegistry registry https://registry.npmjs.org/
+196 silly mapToRegistry data Result {
+196 silly mapToRegistry   raw: 'csv-parse',
+196 silly mapToRegistry   scope: null,
+196 silly mapToRegistry   escapedName: 'csv-parse',
+196 silly mapToRegistry   name: 'csv-parse',
+196 silly mapToRegistry   rawSpec: '',
+196 silly mapToRegistry   spec: 'latest',
+196 silly mapToRegistry   type: 'tag' }
+197 silly mapToRegistry uri https://registry.npmjs.org/csv-parse
+198 silly fetchNamedPackageData debug
+199 silly mapToRegistry name debug
+200 silly mapToRegistry using default registry
+201 silly mapToRegistry registry https://registry.npmjs.org/
+202 silly mapToRegistry data Result {
+202 silly mapToRegistry   raw: 'debug',
+202 silly mapToRegistry   scope: null,
+202 silly mapToRegistry   escapedName: 'debug',
+202 silly mapToRegistry   name: 'debug',
+202 silly mapToRegistry   rawSpec: '',
+202 silly mapToRegistry   spec: 'latest',
+202 silly mapToRegistry   type: 'tag' }
+203 silly mapToRegistry uri https://registry.npmjs.org/debug
+204 silly fetchNamedPackageData dependency-tree
+205 silly mapToRegistry name dependency-tree
+206 silly mapToRegistry using default registry
+207 silly mapToRegistry registry https://registry.npmjs.org/
+208 silly mapToRegistry data Result {
+208 silly mapToRegistry   raw: 'dependency-tree',
+208 silly mapToRegistry   scope: null,
+208 silly mapToRegistry   escapedName: 'dependency-tree',
+208 silly mapToRegistry   name: 'dependency-tree',
+208 silly mapToRegistry   rawSpec: '',
+208 silly mapToRegistry   spec: 'latest',
+208 silly mapToRegistry   type: 'tag' }
+209 silly mapToRegistry uri https://registry.npmjs.org/dependency-tree
+210 silly fetchNamedPackageData detective
+211 silly mapToRegistry name detective
+212 silly mapToRegistry using default registry
+213 silly mapToRegistry registry https://registry.npmjs.org/
+214 silly mapToRegistry data Result {
+214 silly mapToRegistry   raw: 'detective',
+214 silly mapToRegistry   scope: null,
+214 silly mapToRegistry   escapedName: 'detective',
+214 silly mapToRegistry   name: 'detective',
+214 silly mapToRegistry   rawSpec: '',
+214 silly mapToRegistry   spec: 'latest',
+214 silly mapToRegistry   type: 'tag' }
+215 silly mapToRegistry uri https://registry.npmjs.org/detective
+216 silly fetchNamedPackageData eventemitter3
+217 silly mapToRegistry name eventemitter3
+218 silly mapToRegistry using default registry
+219 silly mapToRegistry registry https://registry.npmjs.org/
+220 silly mapToRegistry data Result {
+220 silly mapToRegistry   raw: 'eventemitter3',
+220 silly mapToRegistry   scope: null,
+220 silly mapToRegistry   escapedName: 'eventemitter3',
+220 silly mapToRegistry   name: 'eventemitter3',
+220 silly mapToRegistry   rawSpec: '',
+220 silly mapToRegistry   spec: 'latest',
+220 silly mapToRegistry   type: 'tag' }
+221 silly mapToRegistry uri https://registry.npmjs.org/eventemitter3
+222 silly fetchNamedPackageData fs-extra
+223 silly mapToRegistry name fs-extra
+224 silly mapToRegistry using default registry
+225 silly mapToRegistry registry https://registry.npmjs.org/
+226 silly mapToRegistry data Result {
+226 silly mapToRegistry   raw: 'fs-extra',
+226 silly mapToRegistry   scope: null,
+226 silly mapToRegistry   escapedName: 'fs-extra',
+226 silly mapToRegistry   name: 'fs-extra',
+226 silly mapToRegistry   rawSpec: '',
+226 silly mapToRegistry   spec: 'latest',
+226 silly mapToRegistry   type: 'tag' }
+227 silly mapToRegistry uri https://registry.npmjs.org/fs-extra
+228 silly fetchNamedPackageData ip
+229 silly mapToRegistry name ip
+230 silly mapToRegistry using default registry
+231 silly mapToRegistry registry https://registry.npmjs.org/
+232 silly mapToRegistry data Result {
+232 silly mapToRegistry   raw: 'ip',
+232 silly mapToRegistry   scope: null,
+232 silly mapToRegistry   escapedName: 'ip',
+232 silly mapToRegistry   name: 'ip',
+232 silly mapToRegistry   rawSpec: '',
+232 silly mapToRegistry   spec: 'latest',
+232 silly mapToRegistry   type: 'tag' }
+233 silly mapToRegistry uri https://registry.npmjs.org/ip
+234 silly fetchNamedPackageData is-builtin-module
+235 silly mapToRegistry name is-builtin-module
+236 silly mapToRegistry using default registry
+237 silly mapToRegistry registry https://registry.npmjs.org/
+238 silly mapToRegistry data Result {
+238 silly mapToRegistry   raw: 'is-builtin-module',
+238 silly mapToRegistry   scope: null,
+238 silly mapToRegistry   escapedName: 'is-builtin-module',
+238 silly mapToRegistry   name: 'is-builtin-module',
+238 silly mapToRegistry   rawSpec: '',
+238 silly mapToRegistry   spec: 'latest',
+238 silly mapToRegistry   type: 'tag' }
+239 silly mapToRegistry uri https://registry.npmjs.org/is-builtin-module
+240 silly fetchNamedPackageData joi
+241 silly mapToRegistry name joi
+242 silly mapToRegistry using default registry
+243 silly mapToRegistry registry https://registry.npmjs.org/
+244 silly mapToRegistry data Result {
+244 silly mapToRegistry   raw: 'joi',
+244 silly mapToRegistry   scope: null,
+244 silly mapToRegistry   escapedName: 'joi',
+244 silly mapToRegistry   name: 'joi',
+244 silly mapToRegistry   rawSpec: '',
+244 silly mapToRegistry   spec: 'latest',
+244 silly mapToRegistry   type: 'tag' }
+245 silly mapToRegistry uri https://registry.npmjs.org/joi
+246 silly fetchNamedPackageData js-yaml
+247 silly mapToRegistry name js-yaml
+248 silly mapToRegistry using default registry
+249 silly mapToRegistry registry https://registry.npmjs.org/
+250 silly mapToRegistry data Result {
+250 silly mapToRegistry   raw: 'js-yaml',
+250 silly mapToRegistry   scope: null,
+250 silly mapToRegistry   escapedName: 'js-yaml',
+250 silly mapToRegistry   name: 'js-yaml',
+250 silly mapToRegistry   rawSpec: '',
+250 silly mapToRegistry   spec: 'latest',
+250 silly mapToRegistry   type: 'tag' }
+251 silly mapToRegistry uri https://registry.npmjs.org/js-yaml
+252 silly fetchNamedPackageData nanoid
+253 silly mapToRegistry name nanoid
+254 silly mapToRegistry using default registry
+255 silly mapToRegistry registry https://registry.npmjs.org/
+256 silly mapToRegistry data Result {
+256 silly mapToRegistry   raw: 'nanoid',
+256 silly mapToRegistry   scope: null,
+256 silly mapToRegistry   escapedName: 'nanoid',
+256 silly mapToRegistry   name: 'nanoid',
+256 silly mapToRegistry   rawSpec: '',
+256 silly mapToRegistry   spec: 'latest',
+256 silly mapToRegistry   type: 'tag' }
+257 silly mapToRegistry uri https://registry.npmjs.org/nanoid
+258 silly fetchNamedPackageData ora
+259 silly mapToRegistry name ora
+260 silly mapToRegistry using default registry
+261 silly mapToRegistry registry https://registry.npmjs.org/
+262 silly mapToRegistry data Result {
+262 silly mapToRegistry   raw: 'ora',
+262 silly mapToRegistry   scope: null,
+262 silly mapToRegistry   escapedName: 'ora',
+262 silly mapToRegistry   name: 'ora',
+262 silly mapToRegistry   rawSpec: '',
+262 silly mapToRegistry   spec: 'latest',
+262 silly mapToRegistry   type: 'tag' }
+263 silly mapToRegistry uri https://registry.npmjs.org/ora
+264 silly fetchNamedPackageData posthog-node
+265 silly mapToRegistry name posthog-node
+266 silly mapToRegistry using default registry
+267 silly mapToRegistry registry https://registry.npmjs.org/
+268 silly mapToRegistry data Result {
+268 silly mapToRegistry   raw: 'posthog-node',
+268 silly mapToRegistry   scope: null,
+268 silly mapToRegistry   escapedName: 'posthog-node',
+268 silly mapToRegistry   name: 'posthog-node',
+268 silly mapToRegistry   rawSpec: '',
+268 silly mapToRegistry   spec: 'latest',
+268 silly mapToRegistry   type: 'tag' }
+269 silly mapToRegistry uri https://registry.npmjs.org/posthog-node
+270 silly fetchNamedPackageData sqs-consumer
+271 silly mapToRegistry name sqs-consumer
+272 silly mapToRegistry using default registry
+273 silly mapToRegistry registry https://registry.npmjs.org/
+274 silly mapToRegistry data Result {
+274 silly mapToRegistry   raw: 'sqs-consumer',
+274 silly mapToRegistry   scope: null,
+274 silly mapToRegistry   escapedName: 'sqs-consumer',
+274 silly mapToRegistry   name: 'sqs-consumer',
+274 silly mapToRegistry   rawSpec: '',
+274 silly mapToRegistry   spec: 'latest',
+274 silly mapToRegistry   type: 'tag' }
+275 silly mapToRegistry uri https://registry.npmjs.org/sqs-consumer
+276 silly fetchNamedPackageData temp
+277 silly mapToRegistry name temp
+278 silly mapToRegistry using default registry
+279 silly mapToRegistry registry https://registry.npmjs.org/
+280 silly mapToRegistry data Result {
+280 silly mapToRegistry   raw: 'temp',
+280 silly mapToRegistry   scope: null,
+280 silly mapToRegistry   escapedName: 'temp',
+280 silly mapToRegistry   name: 'temp',
+280 silly mapToRegistry   rawSpec: '',
+280 silly mapToRegistry   spec: 'latest',
+280 silly mapToRegistry   type: 'tag' }
+281 silly mapToRegistry uri https://registry.npmjs.org/temp
+282 silly fetchNamedPackageData tmp
+283 silly mapToRegistry name tmp
+284 silly mapToRegistry using default registry
+285 silly mapToRegistry registry https://registry.npmjs.org/
+286 silly mapToRegistry data Result {
+286 silly mapToRegistry   raw: 'tmp',
+286 silly mapToRegistry   scope: null,
+286 silly mapToRegistry   escapedName: 'tmp',
+286 silly mapToRegistry   name: 'tmp',
+286 silly mapToRegistry   rawSpec: '',
+286 silly mapToRegistry   spec: 'latest',
+286 silly mapToRegistry   type: 'tag' }
+287 silly mapToRegistry uri https://registry.npmjs.org/tmp
+288 silly fetchNamedPackageData try-require
+289 silly mapToRegistry name try-require
+290 silly mapToRegistry using default registry
+291 silly mapToRegistry registry https://registry.npmjs.org/
+292 silly mapToRegistry data Result {
+292 silly mapToRegistry   raw: 'try-require',
+292 silly mapToRegistry   scope: null,
+292 silly mapToRegistry   escapedName: 'try-require',
+292 silly mapToRegistry   name: 'try-require',
+292 silly mapToRegistry   rawSpec: '',
+292 silly mapToRegistry   spec: 'latest',
+292 silly mapToRegistry   type: 'tag' }
+293 silly mapToRegistry uri https://registry.npmjs.org/try-require
+294 silly fetchNamedPackageData walk-sync
+295 silly mapToRegistry name walk-sync
+296 silly mapToRegistry using default registry
+297 silly mapToRegistry registry https://registry.npmjs.org/
+298 silly mapToRegistry data Result {
+298 silly mapToRegistry   raw: 'walk-sync',
+298 silly mapToRegistry   scope: null,
+298 silly mapToRegistry   escapedName: 'walk-sync',
+298 silly mapToRegistry   name: 'walk-sync',
+298 silly mapToRegistry   rawSpec: '',
+298 silly mapToRegistry   spec: 'latest',
+298 silly mapToRegistry   type: 'tag' }
+299 silly mapToRegistry uri https://registry.npmjs.org/walk-sync
+300 silly fetchNamedPackageData yaml-js
+301 silly mapToRegistry name yaml-js
+302 silly mapToRegistry using default registry
+303 silly mapToRegistry registry https://registry.npmjs.org/
+304 silly mapToRegistry data Result {
+304 silly mapToRegistry   raw: 'yaml-js',
+304 silly mapToRegistry   scope: null,
+304 silly mapToRegistry   escapedName: 'yaml-js',
+304 silly mapToRegistry   name: 'yaml-js',
+304 silly mapToRegistry   rawSpec: '',
+304 silly mapToRegistry   spec: 'latest',
+304 silly mapToRegistry   type: 'tag' }
+305 silly mapToRegistry uri https://registry.npmjs.org/yaml-js
+306 verbose request uri https://registry.npmjs.org/@artilleryio%2fint-commons
+307 verbose request no auth needed
+308 info attempt registry request try #1 at 5:37:52 PM
+309 verbose etag W/"1eb8d343e124ef844153e471df6b5800"
+310 verbose lastModified Wed, 03 Jan 2024 17:21:56 GMT
+311 http request GET https://registry.npmjs.org/@artilleryio%2fint-commons
+312 verbose request uri https://registry.npmjs.org/@artilleryio%2fint-core
+313 verbose request no auth needed
+314 info attempt registry request try #1 at 5:37:52 PM
+315 verbose etag W/"3a55e08f3ed5c53ddd8304d59144d7d1"
+316 verbose lastModified Wed, 03 Jan 2024 17:21:58 GMT
+317 http request GET https://registry.npmjs.org/@artilleryio%2fint-core
+318 verbose request uri https://registry.npmjs.org/@oclif%2fcore
+319 verbose request no auth needed
+320 info attempt registry request try #1 at 5:37:52 PM
+321 verbose etag W/"70d4fb8b9aedc0a83806fda9be6de570"
+322 verbose lastModified Tue, 02 Jan 2024 17:26:24 GMT
+323 http request GET https://registry.npmjs.org/@oclif%2fcore
+324 verbose request uri https://registry.npmjs.org/artillery-engine-playwright
+325 verbose request no auth needed
+326 info attempt registry request try #1 at 5:37:52 PM
+327 verbose etag W/"ce5e0f659bc200817370ed9422d461ee"
+328 verbose lastModified Wed, 03 Jan 2024 17:22:12 GMT
+329 http request GET https://registry.npmjs.org/artillery-engine-playwright
+330 verbose request uri https://registry.npmjs.org/artillery-plugin-apdex
+331 verbose request no auth needed
+332 info attempt registry request try #1 at 5:37:52 PM
+333 verbose etag W/"427d34dcfa60983150b051bcc831ca48"
+334 verbose lastModified Wed, 03 Jan 2024 17:22:08 GMT
+335 http request GET https://registry.npmjs.org/artillery-plugin-apdex
+336 verbose request uri https://registry.npmjs.org/artillery-plugin-ensure
+337 verbose request no auth needed
+338 info attempt registry request try #1 at 5:37:52 PM
+339 verbose etag W/"b1fb7421ba428c61dce940e20d5709a6"
+340 verbose lastModified Wed, 03 Jan 2024 17:22:06 GMT
+341 http request GET https://registry.npmjs.org/artillery-plugin-ensure
+342 verbose request uri https://registry.npmjs.org/archiver
+343 verbose request no auth needed
+344 info attempt registry request try #1 at 5:37:52 PM
+345 verbose etag W/"ff3abd85221fbc34f45c2b03237ddb13"
+346 verbose lastModified Mon, 04 Sep 2023 03:41:10 GMT
+347 http request GET https://registry.npmjs.org/archiver
+348 verbose request uri https://registry.npmjs.org/@oclif%2fplugin-not-found
+349 verbose request no auth needed
+350 info attempt registry request try #1 at 5:37:52 PM
+351 verbose etag W/"f5db4c4b1a52dd558358fcc9f2258822"
+352 verbose lastModified Sun, 31 Dec 2023 02:46:32 GMT
+353 http request GET https://registry.npmjs.org/@oclif%2fplugin-not-found
+354 verbose request uri https://registry.npmjs.org/artillery-plugin-fake-data
+355 verbose request no auth needed
+356 info attempt registry request try #1 at 5:37:52 PM
+357 verbose etag W/"bf87a8d0850e0e9616dc614ec28c7618"
+358 verbose lastModified Wed, 03 Jan 2024 17:22:14 GMT
+359 http request GET https://registry.npmjs.org/artillery-plugin-fake-data
+360 verbose request uri https://registry.npmjs.org/@aws-sdk%2fcredential-providers
+361 verbose request no auth needed
+362 info attempt registry request try #1 at 5:37:52 PM
+363 verbose etag W/"eac41264d365cf0504e4da88211fe999"
+364 verbose lastModified Wed, 03 Jan 2024 20:28:42 GMT
+365 http request GET https://registry.npmjs.org/@aws-sdk%2fcredential-providers
+366 verbose request uri https://registry.npmjs.org/artillery-plugin-expect
+367 verbose request no auth needed
+368 info attempt registry request try #1 at 5:37:52 PM
+369 verbose etag W/"7cce6bee38ac142e98c324da7dcf5daf"
+370 verbose lastModified Wed, 03 Jan 2024 17:22:01 GMT
+371 http request GET https://registry.npmjs.org/artillery-plugin-expect
+372 verbose request uri https://registry.npmjs.org/artillery-plugin-metrics-by-endpoint
+373 verbose request no auth needed
+374 info attempt registry request try #1 at 5:37:52 PM
+375 verbose etag W/"9ca8948c6bb1697261554704726c6b47"
+376 verbose lastModified Wed, 03 Jan 2024 17:22:04 GMT
+377 http request GET https://registry.npmjs.org/artillery-plugin-metrics-by-endpoint
+378 verbose request uri https://registry.npmjs.org/@oclif%2fplugin-help
+379 verbose request no auth needed
+380 info attempt registry request try #1 at 5:37:52 PM
+381 verbose etag W/"e36f788f039b2973bee434c55f7763c4"
+382 verbose lastModified Sat, 16 Dec 2023 11:46:45 GMT
+383 http request GET https://registry.npmjs.org/@oclif%2fplugin-help
+384 verbose request uri https://registry.npmjs.org/chalk
+385 verbose request no auth needed
+386 info attempt registry request try #1 at 5:37:52 PM
+387 verbose etag W/"7a5b831ab5cb0db37a41e7052f0f17a5"
+388 verbose lastModified Thu, 30 Nov 2023 14:10:19 GMT
+389 http request GET https://registry.npmjs.org/chalk
+390 verbose request uri https://registry.npmjs.org/artillery-plugin-publish-metrics
+391 verbose request no auth needed
+392 info attempt registry request try #1 at 5:37:52 PM
+393 verbose etag W/"594d862c6365f8c1375e52b3eebc1992"
+394 verbose lastModified Wed, 03 Jan 2024 17:22:03 GMT
+395 http request GET https://registry.npmjs.org/artillery-plugin-publish-metrics
+396 verbose request uri https://registry.npmjs.org/cross-spawn
+397 verbose request no auth needed
+398 info attempt registry request try #1 at 5:37:52 PM
+399 verbose etag W/"d7b0f907ed2ebf0bb83f4970d1784644"
+400 verbose lastModified Thu, 22 Jun 2023 16:31:39 GMT
+401 http request GET https://registry.npmjs.org/cross-spawn
+402 verbose request uri https://registry.npmjs.org/cli-table3
+403 verbose request no auth needed
+404 info attempt registry request try #1 at 5:37:52 PM
+405 verbose etag W/"48288bade476921a4b5caf142d2a5e17"
+406 verbose lastModified Thu, 15 Sep 2022 19:20:42 GMT
+407 http request GET https://registry.npmjs.org/cli-table3
+408 verbose request uri https://registry.npmjs.org/csv-parse
+409 verbose request no auth needed
+410 info attempt registry request try #1 at 5:37:52 PM
+411 verbose etag W/"f0dee2cdbace84ec04f8759fd83e6f26"
+412 verbose lastModified Fri, 08 Dec 2023 17:11:06 GMT
+413 http request GET https://registry.npmjs.org/csv-parse
+414 verbose request uri https://registry.npmjs.org/eventemitter3
+415 verbose request no auth needed
+416 info attempt registry request try #1 at 5:37:52 PM
+417 verbose etag W/"114075cbfd737b5770e42d1010659889"
+418 verbose lastModified Sun, 30 Apr 2023 19:49:15 GMT
+419 http request GET https://registry.npmjs.org/eventemitter3
+420 verbose request uri https://registry.npmjs.org/debug
+421 verbose request no auth needed
+422 info attempt registry request try #1 at 5:37:52 PM
+423 verbose etag W/"0d90bc5a025b8e60730f673f1894cded"
+424 verbose lastModified Tue, 07 Nov 2023 05:00:35 GMT
+425 http request GET https://registry.npmjs.org/debug
+426 verbose request uri https://registry.npmjs.org/dependency-tree
+427 verbose request no auth needed
+428 info attempt registry request try #1 at 5:37:52 PM
+429 verbose etag W/"37bfdfce47ad4cab635c9b0e8e633e0b"
+430 verbose lastModified Sat, 27 May 2023 11:45:48 GMT
+431 http request GET https://registry.npmjs.org/dependency-tree
+432 verbose request uri https://registry.npmjs.org/ci-info
+433 verbose request no auth needed
+434 info attempt registry request try #1 at 5:37:52 PM
+435 verbose etag W/"0265490d0748a32fb91d6998a2ffdc97"
+436 verbose lastModified Sun, 29 Oct 2023 06:41:24 GMT
+437 http request GET https://registry.npmjs.org/ci-info
+438 verbose request uri https://registry.npmjs.org/detective
+439 verbose request no auth needed
+440 info attempt registry request try #1 at 5:37:52 PM
+441 verbose etag W/"b55e03de59b4358adfa45a6b586fb241"
+442 verbose lastModified Fri, 11 Nov 2022 06:34:28 GMT
+443 http request GET https://registry.npmjs.org/detective
+444 verbose request uri https://registry.npmjs.org/is-builtin-module
+445 verbose request no auth needed
+446 info attempt registry request try #1 at 5:37:52 PM
+447 verbose etag W/"54826fd686f55c2f273aaac172ba70c0"
+448 verbose lastModified Tue, 31 Jan 2023 05:53:22 GMT
+449 http request GET https://registry.npmjs.org/is-builtin-module
+450 verbose request uri https://registry.npmjs.org/fs-extra
+451 verbose request no auth needed
+452 info attempt registry request try #1 at 5:37:52 PM
+453 verbose etag W/"9c14da616cfef6b68914ba3437742996"
+454 verbose lastModified Tue, 28 Nov 2023 00:46:36 GMT
+455 http request GET https://registry.npmjs.org/fs-extra
+456 verbose request uri https://registry.npmjs.org/ip
+457 verbose request no auth needed
+458 info attempt registry request try #1 at 5:37:52 PM
+459 verbose etag W/"7294876cff800cdf69dee91806ccb68d"
+460 verbose lastModified Sun, 19 Jun 2022 02:20:55 GMT
+461 http request GET https://registry.npmjs.org/ip
+462 verbose request uri https://registry.npmjs.org/async
+463 verbose request no auth needed
+464 info attempt registry request try #1 at 5:37:52 PM
+465 verbose etag W/"6c7399d87a5d64bc3253e25c31b51d4b"
+466 verbose lastModified Thu, 30 Nov 2023 14:10:10 GMT
+467 http request GET https://registry.npmjs.org/async
+468 verbose request uri https://registry.npmjs.org/joi
+469 verbose request no auth needed
+470 info attempt registry request try #1 at 5:37:52 PM
+471 verbose etag W/"7b45722f8097426334aff13d175acec6"
+472 verbose lastModified Mon, 01 Jan 2024 12:57:44 GMT
+473 http request GET https://registry.npmjs.org/joi
+474 verbose request uri https://registry.npmjs.org/nanoid
+475 verbose request no auth needed
+476 info attempt registry request try #1 at 5:37:52 PM
+477 verbose etag W/"39b1d31db839a522615217bbe5f6ee93"
+478 verbose lastModified Tue, 26 Dec 2023 07:26:29 GMT
+479 http request GET https://registry.npmjs.org/nanoid
+480 verbose request uri https://registry.npmjs.org/posthog-node
+481 verbose request no auth needed
+482 info attempt registry request try #1 at 5:37:52 PM
+483 verbose etag W/"ab75309c7646578255c20c00eb91139a"
+484 verbose lastModified Tue, 02 Jan 2024 14:53:41 GMT
+485 http request GET https://registry.npmjs.org/posthog-node
+486 verbose request uri https://registry.npmjs.org/sqs-consumer
+487 verbose request no auth needed
+488 info attempt registry request try #1 at 5:37:52 PM
+489 verbose etag W/"5ac779599575f3750108c153d4c1c29d"
+490 verbose lastModified Fri, 15 Dec 2023 01:12:48 GMT
+491 http request GET https://registry.npmjs.org/sqs-consumer
+492 verbose request uri https://registry.npmjs.org/temp
+493 verbose request no auth needed
+494 info attempt registry request try #1 at 5:37:52 PM
+495 verbose etag W/"ca30d02277d5af5b1ff3ddee4431ac35"
+496 verbose lastModified Fri, 10 Feb 2023 19:41:17 GMT
+497 http request GET https://registry.npmjs.org/temp
+498 verbose request uri https://registry.npmjs.org/ora
+499 verbose request no auth needed
+500 info attempt registry request try #1 at 5:37:52 PM
+501 verbose etag W/"46a6fe95c1458ff2bec0a90e23714f13"
+502 verbose lastModified Sat, 23 Dec 2023 11:38:34 GMT
+503 http request GET https://registry.npmjs.org/ora
+504 verbose request uri https://registry.npmjs.org/try-require
+505 verbose request no auth needed
+506 info attempt registry request try #1 at 5:37:52 PM
+507 verbose etag W/"cb36fbfe7468eae4f00d972bcabec4ed"
+508 verbose lastModified Mon, 27 Jun 2022 21:56:35 GMT
+509 http request GET https://registry.npmjs.org/try-require
+510 verbose request uri https://registry.npmjs.org/walk-sync
+511 verbose request no auth needed
+512 info attempt registry request try #1 at 5:37:52 PM
+513 verbose etag W/"58d415aa30140f164c058ae0e6b50360"
+514 verbose lastModified Tue, 28 Jun 2022 21:34:15 GMT
+515 http request GET https://registry.npmjs.org/walk-sync
+516 verbose request uri https://registry.npmjs.org/tmp
+517 verbose request no auth needed
+518 info attempt registry request try #1 at 5:37:52 PM
+519 verbose etag W/"997109c3af0ddc1782c7d37e2a6243fc"
+520 verbose lastModified Sun, 09 Jul 2023 22:10:12 GMT
+521 http request GET https://registry.npmjs.org/tmp
+522 verbose request uri https://registry.npmjs.org/js-yaml
+523 verbose request no auth needed
+524 info attempt registry request try #1 at 5:37:52 PM
+525 verbose etag W/"9081237d6e4a6d74f9e639a2d78ca615"
+526 verbose lastModified Fri, 09 Jun 2023 21:33:20 GMT
+527 http request GET https://registry.npmjs.org/js-yaml
+528 verbose request uri https://registry.npmjs.org/yaml-js
+529 verbose request no auth needed
+530 info attempt registry request try #1 at 5:37:52 PM
+531 verbose etag W/"9daa2c5a34f0cbf3cf3123afbdb9a5d4"
+532 verbose lastModified Wed, 12 Jul 2023 19:13:23 GMT
+533 http request GET https://registry.npmjs.org/yaml-js
+534 verbose request uri https://registry.npmjs.org/aws-sdk
+535 verbose request no auth needed
+536 info attempt registry request try #1 at 5:37:53 PM
+537 verbose etag W/"0b6bd014166d5c1ee6485620f0e04ead"
+538 verbose lastModified Wed, 03 Jan 2024 19:35:49 GMT
+539 http request GET https://registry.npmjs.org/aws-sdk
+540 http 304 https://registry.npmjs.org/@artilleryio%2fint-commons
+541 verbose headers { date: 'Thu, 04 Jan 2024 12:07:52 GMT',
+541 verbose headers   connection: 'keep-alive',
+541 verbose headers   'cf-ray': '84035d1b5dac1d31-BLR',
+541 verbose headers   'cf-cache-status': 'HIT',
+541 verbose headers   age: '53',
+541 verbose headers   'cache-control': 'public, max-age=300',
+541 verbose headers   etag: '"1eb8d343e124ef844153e471df6b5800"',
+541 verbose headers   'last-modified': 'Wed, 03 Jan 2024 17:21:56 GMT',
+541 verbose headers   vary: 'Accept-Encoding',
+541 verbose headers   server: 'cloudflare' }
+542 silly get cb [ 304,
+542 silly get   { date: 'Thu, 04 Jan 2024 12:07:52 GMT',
+542 silly get     connection: 'keep-alive',
+542 silly get     'cf-ray': '84035d1b5dac1d31-BLR',
+542 silly get     'cf-cache-status': 'HIT',
+542 silly get     age: '53',
+542 silly get     'cache-control': 'public, max-age=300',
+542 silly get     etag: '"1eb8d343e124ef844153e471df6b5800"',
+542 silly get     'last-modified': 'Wed, 03 Jan 2024 17:21:56 GMT',
+542 silly get     vary: 'Accept-Encoding',
+542 silly get     server: 'cloudflare' } ]
+543 verbose etag https://registry.npmjs.org/@artilleryio%2fint-commons from cache
+544 verbose get saving @artilleryio/int-commons to /Users/akshaylahudkar/.npm/registry.npmjs.org/_40artilleryio_252fint-commons/.cache.json
+545 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+546 silly resolveWithNewModule @artilleryio/int-commons@2.0.4 checking installable status
+547 silly cache add args [ '@artilleryio/int-commons@2.0.4', null ]
+548 verbose cache add spec @artilleryio/int-commons@2.0.4
+549 silly cache add parsed spec Result {
+549 silly cache add   raw: '@artilleryio/int-commons@2.0.4',
+549 silly cache add   scope: '@artilleryio',
+549 silly cache add   escapedName: '@artilleryio%2fint-commons',
+549 silly cache add   name: '@artilleryio/int-commons',
+549 silly cache add   rawSpec: '2.0.4',
+549 silly cache add   spec: '2.0.4',
+549 silly cache add   type: 'version' }
+550 silly addNamed @artilleryio/int-commons@2.0.4
+551 verbose addNamed "2.0.4" is a plain semver version for @artilleryio/int-commons
+552 silly mapToRegistry name @artilleryio/int-commons
+553 silly mapToRegistry scope (from package name) @artilleryio
+554 verbose mapToRegistry no registry URL found in name for scope @artilleryio
+555 silly mapToRegistry using default registry
+556 silly mapToRegistry registry https://registry.npmjs.org/
+557 silly mapToRegistry data Result {
+557 silly mapToRegistry   raw: '@artilleryio/int-commons',
+557 silly mapToRegistry   scope: '@artilleryio',
+557 silly mapToRegistry   escapedName: '@artilleryio%2fint-commons',
+557 silly mapToRegistry   name: '@artilleryio/int-commons',
+557 silly mapToRegistry   rawSpec: '',
+557 silly mapToRegistry   spec: 'latest',
+557 silly mapToRegistry   type: 'tag' }
+558 silly mapToRegistry uri https://registry.npmjs.org/@artilleryio%2fint-commons
+559 verbose addNameVersion registry:https://registry.npmjs.org/@artilleryio%2fint-commons not in flight; fetching
+560 http 304 https://registry.npmjs.org/js-yaml
+561 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+561 verbose headers   connection: 'keep-alive',
+561 verbose headers   'cf-ray': '84035d1cef331d31-BLR',
+561 verbose headers   'cf-cache-status': 'HIT',
+561 verbose headers   age: '123',
+561 verbose headers   'cache-control': 'public, max-age=300',
+561 verbose headers   etag: '"9081237d6e4a6d74f9e639a2d78ca615"',
+561 verbose headers   'last-modified': 'Fri, 09 Jun 2023 21:33:20 GMT',
+561 verbose headers   vary: 'Accept-Encoding',
+561 verbose headers   server: 'cloudflare' }
+562 silly get cb [ 304,
+562 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+562 silly get     connection: 'keep-alive',
+562 silly get     'cf-ray': '84035d1cef331d31-BLR',
+562 silly get     'cf-cache-status': 'HIT',
+562 silly get     age: '123',
+562 silly get     'cache-control': 'public, max-age=300',
+562 silly get     etag: '"9081237d6e4a6d74f9e639a2d78ca615"',
+562 silly get     'last-modified': 'Fri, 09 Jun 2023 21:33:20 GMT',
+562 silly get     vary: 'Accept-Encoding',
+562 silly get     server: 'cloudflare' } ]
+563 verbose etag https://registry.npmjs.org/js-yaml from cache
+564 verbose get saving js-yaml to /Users/akshaylahudkar/.npm/registry.npmjs.org/js-yaml/.cache.json
+565 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+566 http 304 https://registry.npmjs.org/artillery-plugin-apdex
+567 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+567 verbose headers   connection: 'keep-alive',
+567 verbose headers   'cf-ray': '84035d1cfd431d95-BLR',
+567 verbose headers   'cf-cache-status': 'HIT',
+567 verbose headers   age: '55',
+567 verbose headers   'cache-control': 'public, max-age=300',
+567 verbose headers   etag: '"427d34dcfa60983150b051bcc831ca48"',
+567 verbose headers   'last-modified': 'Wed, 03 Jan 2024 17:22:08 GMT',
+567 verbose headers   vary: 'Accept-Encoding',
+567 verbose headers   server: 'cloudflare' }
+568 silly get cb [ 304,
+568 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+568 silly get     connection: 'keep-alive',
+568 silly get     'cf-ray': '84035d1cfd431d95-BLR',
+568 silly get     'cf-cache-status': 'HIT',
+568 silly get     age: '55',
+568 silly get     'cache-control': 'public, max-age=300',
+568 silly get     etag: '"427d34dcfa60983150b051bcc831ca48"',
+568 silly get     'last-modified': 'Wed, 03 Jan 2024 17:22:08 GMT',
+568 silly get     vary: 'Accept-Encoding',
+568 silly get     server: 'cloudflare' } ]
+569 verbose etag https://registry.npmjs.org/artillery-plugin-apdex from cache
+570 verbose get saving artillery-plugin-apdex to /Users/akshaylahudkar/.npm/registry.npmjs.org/artillery-plugin-apdex/.cache.json
+571 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+572 http 304 https://registry.npmjs.org/artillery-engine-playwright
+573 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+573 verbose headers   connection: 'keep-alive',
+573 verbose headers   'cf-ray': '84035d1cff331d39-BLR',
+573 verbose headers   'cf-cache-status': 'HIT',
+573 verbose headers   age: '55',
+573 verbose headers   'cache-control': 'public, max-age=300',
+573 verbose headers   etag: '"ce5e0f659bc200817370ed9422d461ee"',
+573 verbose headers   'last-modified': 'Wed, 03 Jan 2024 17:22:12 GMT',
+573 verbose headers   vary: 'Accept-Encoding',
+573 verbose headers   server: 'cloudflare' }
+574 silly get cb [ 304,
+574 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+574 silly get     connection: 'keep-alive',
+574 silly get     'cf-ray': '84035d1cff331d39-BLR',
+574 silly get     'cf-cache-status': 'HIT',
+574 silly get     age: '55',
+574 silly get     'cache-control': 'public, max-age=300',
+574 silly get     etag: '"ce5e0f659bc200817370ed9422d461ee"',
+574 silly get     'last-modified': 'Wed, 03 Jan 2024 17:22:12 GMT',
+574 silly get     vary: 'Accept-Encoding',
+574 silly get     server: 'cloudflare' } ]
+575 verbose etag https://registry.npmjs.org/artillery-engine-playwright from cache
+576 verbose get saving artillery-engine-playwright to /Users/akshaylahudkar/.npm/registry.npmjs.org/artillery-engine-playwright/.cache.json
+577 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+578 http 304 https://registry.npmjs.org/archiver
+579 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+579 verbose headers   connection: 'keep-alive',
+579 verbose headers   'cf-ray': '84035d1cfa2f1d24-BLR',
+579 verbose headers   'cf-cache-status': 'HIT',
+579 verbose headers   age: '55',
+579 verbose headers   'cache-control': 'public, max-age=300',
+579 verbose headers   etag: '"ff3abd85221fbc34f45c2b03237ddb13"',
+579 verbose headers   'last-modified': 'Mon, 04 Sep 2023 03:41:10 GMT',
+579 verbose headers   vary: 'Accept-Encoding',
+579 verbose headers   server: 'cloudflare' }
+580 silly get cb [ 304,
+580 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+580 silly get     connection: 'keep-alive',
+580 silly get     'cf-ray': '84035d1cfa2f1d24-BLR',
+580 silly get     'cf-cache-status': 'HIT',
+580 silly get     age: '55',
+580 silly get     'cache-control': 'public, max-age=300',
+580 silly get     etag: '"ff3abd85221fbc34f45c2b03237ddb13"',
+580 silly get     'last-modified': 'Mon, 04 Sep 2023 03:41:10 GMT',
+580 silly get     vary: 'Accept-Encoding',
+580 silly get     server: 'cloudflare' } ]
+581 verbose etag https://registry.npmjs.org/archiver from cache
+582 verbose get saving archiver to /Users/akshaylahudkar/.npm/registry.npmjs.org/archiver/.cache.json
+583 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+584 http 304 https://registry.npmjs.org/artillery-plugin-ensure
+585 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+585 verbose headers   connection: 'keep-alive',
+585 verbose headers   'cf-ray': '84035d1cfed61d8d-BLR',
+585 verbose headers   'cf-cache-status': 'HIT',
+585 verbose headers   age: '55',
+585 verbose headers   'cache-control': 'public, max-age=300',
+585 verbose headers   etag: '"b1fb7421ba428c61dce940e20d5709a6"',
+585 verbose headers   'last-modified': 'Wed, 03 Jan 2024 17:22:06 GMT',
+585 verbose headers   vary: 'Accept-Encoding',
+585 verbose headers   server: 'cloudflare' }
+586 silly get cb [ 304,
+586 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+586 silly get     connection: 'keep-alive',
+586 silly get     'cf-ray': '84035d1cfed61d8d-BLR',
+586 silly get     'cf-cache-status': 'HIT',
+586 silly get     age: '55',
+586 silly get     'cache-control': 'public, max-age=300',
+586 silly get     etag: '"b1fb7421ba428c61dce940e20d5709a6"',
+586 silly get     'last-modified': 'Wed, 03 Jan 2024 17:22:06 GMT',
+586 silly get     vary: 'Accept-Encoding',
+586 silly get     server: 'cloudflare' } ]
+587 verbose etag https://registry.npmjs.org/artillery-plugin-ensure from cache
+588 verbose get saving artillery-plugin-ensure to /Users/akshaylahudkar/.npm/registry.npmjs.org/artillery-plugin-ensure/.cache.json
+589 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+590 http 304 https://registry.npmjs.org/artillery-plugin-publish-metrics
+591 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+591 verbose headers   connection: 'keep-alive',
+591 verbose headers   'cf-ray': '84035d1cfc1f1d1c-BLR',
+591 verbose headers   'cf-cache-status': 'HIT',
+591 verbose headers   age: '55',
+591 verbose headers   'cache-control': 'public, max-age=300',
+591 verbose headers   etag: '"594d862c6365f8c1375e52b3eebc1992"',
+591 verbose headers   'last-modified': 'Wed, 03 Jan 2024 17:22:03 GMT',
+591 verbose headers   vary: 'Accept-Encoding',
+591 verbose headers   server: 'cloudflare' }
+592 silly get cb [ 304,
+592 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+592 silly get     connection: 'keep-alive',
+592 silly get     'cf-ray': '84035d1cfc1f1d1c-BLR',
+592 silly get     'cf-cache-status': 'HIT',
+592 silly get     age: '55',
+592 silly get     'cache-control': 'public, max-age=300',
+592 silly get     etag: '"594d862c6365f8c1375e52b3eebc1992"',
+592 silly get     'last-modified': 'Wed, 03 Jan 2024 17:22:03 GMT',
+592 silly get     vary: 'Accept-Encoding',
+592 silly get     server: 'cloudflare' } ]
+593 verbose etag https://registry.npmjs.org/artillery-plugin-publish-metrics from cache
+594 verbose get saving artillery-plugin-publish-metrics to /Users/akshaylahudkar/.npm/registry.npmjs.org/artillery-plugin-publish-metrics/.cache.json
+595 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+596 http 304 https://registry.npmjs.org/chalk
+597 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+597 verbose headers   connection: 'keep-alive',
+597 verbose headers   'cf-ray': '84035d1d0d551d95-BLR',
+597 verbose headers   'cf-cache-status': 'HIT',
+597 verbose headers   age: '140',
+597 verbose headers   'cache-control': 'public, max-age=300',
+597 verbose headers   etag: '"7a5b831ab5cb0db37a41e7052f0f17a5"',
+597 verbose headers   'last-modified': 'Thu, 30 Nov 2023 14:10:19 GMT',
+597 verbose headers   vary: 'Accept-Encoding',
+597 verbose headers   server: 'cloudflare' }
+598 silly get cb [ 304,
+598 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+598 silly get     connection: 'keep-alive',
+598 silly get     'cf-ray': '84035d1d0d551d95-BLR',
+598 silly get     'cf-cache-status': 'HIT',
+598 silly get     age: '140',
+598 silly get     'cache-control': 'public, max-age=300',
+598 silly get     etag: '"7a5b831ab5cb0db37a41e7052f0f17a5"',
+598 silly get     'last-modified': 'Thu, 30 Nov 2023 14:10:19 GMT',
+598 silly get     vary: 'Accept-Encoding',
+598 silly get     server: 'cloudflare' } ]
+599 verbose etag https://registry.npmjs.org/chalk from cache
+600 verbose get saving chalk to /Users/akshaylahudkar/.npm/registry.npmjs.org/chalk/.cache.json
+601 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+602 http 304 https://registry.npmjs.org/artillery-plugin-expect
+603 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+603 verbose headers   connection: 'keep-alive',
+603 verbose headers   'cf-ray': '84035d1d08fe1da9-BLR',
+603 verbose headers   'cf-cache-status': 'HIT',
+603 verbose headers   age: '55',
+603 verbose headers   'cache-control': 'public, max-age=300',
+603 verbose headers   etag: '"7cce6bee38ac142e98c324da7dcf5daf"',
+603 verbose headers   'last-modified': 'Wed, 03 Jan 2024 17:22:01 GMT',
+603 verbose headers   vary: 'Accept-Encoding',
+603 verbose headers   server: 'cloudflare' }
+604 silly get cb [ 304,
+604 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+604 silly get     connection: 'keep-alive',
+604 silly get     'cf-ray': '84035d1d08fe1da9-BLR',
+604 silly get     'cf-cache-status': 'HIT',
+604 silly get     age: '55',
+604 silly get     'cache-control': 'public, max-age=300',
+604 silly get     etag: '"7cce6bee38ac142e98c324da7dcf5daf"',
+604 silly get     'last-modified': 'Wed, 03 Jan 2024 17:22:01 GMT',
+604 silly get     vary: 'Accept-Encoding',
+604 silly get     server: 'cloudflare' } ]
+605 verbose etag https://registry.npmjs.org/artillery-plugin-expect from cache
+606 verbose get saving artillery-plugin-expect to /Users/akshaylahudkar/.npm/registry.npmjs.org/artillery-plugin-expect/.cache.json
+607 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+608 http 304 https://registry.npmjs.org/artillery-plugin-metrics-by-endpoint
+609 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+609 verbose headers   connection: 'keep-alive',
+609 verbose headers   'cf-ray': '84035d1d0f211d35-BLR',
+609 verbose headers   'cf-cache-status': 'HIT',
+609 verbose headers   age: '55',
+609 verbose headers   'cache-control': 'public, max-age=300',
+609 verbose headers   etag: '"9ca8948c6bb1697261554704726c6b47"',
+609 verbose headers   'last-modified': 'Wed, 03 Jan 2024 17:22:04 GMT',
+609 verbose headers   vary: 'Accept-Encoding',
+609 verbose headers   server: 'cloudflare' }
+610 silly get cb [ 304,
+610 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+610 silly get     connection: 'keep-alive',
+610 silly get     'cf-ray': '84035d1d0f211d35-BLR',
+610 silly get     'cf-cache-status': 'HIT',
+610 silly get     age: '55',
+610 silly get     'cache-control': 'public, max-age=300',
+610 silly get     etag: '"9ca8948c6bb1697261554704726c6b47"',
+610 silly get     'last-modified': 'Wed, 03 Jan 2024 17:22:04 GMT',
+610 silly get     vary: 'Accept-Encoding',
+610 silly get     server: 'cloudflare' } ]
+611 verbose etag https://registry.npmjs.org/artillery-plugin-metrics-by-endpoint from cache
+612 verbose get saving artillery-plugin-metrics-by-endpoint to /Users/akshaylahudkar/.npm/registry.npmjs.org/artillery-plugin-metrics-by-endpoint/.cache.json
+613 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+614 http 304 https://registry.npmjs.org/artillery-plugin-fake-data
+615 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+615 verbose headers   connection: 'keep-alive',
+615 verbose headers   'cf-ray': '84035d1d0cb61d9d-BLR',
+615 verbose headers   'cf-cache-status': 'HIT',
+615 verbose headers   age: '55',
+615 verbose headers   'cache-control': 'public, max-age=300',
+615 verbose headers   etag: '"bf87a8d0850e0e9616dc614ec28c7618"',
+615 verbose headers   'last-modified': 'Wed, 03 Jan 2024 17:22:14 GMT',
+615 verbose headers   vary: 'Accept-Encoding',
+615 verbose headers   server: 'cloudflare' }
+616 silly get cb [ 304,
+616 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+616 silly get     connection: 'keep-alive',
+616 silly get     'cf-ray': '84035d1d0cb61d9d-BLR',
+616 silly get     'cf-cache-status': 'HIT',
+616 silly get     age: '55',
+616 silly get     'cache-control': 'public, max-age=300',
+616 silly get     etag: '"bf87a8d0850e0e9616dc614ec28c7618"',
+616 silly get     'last-modified': 'Wed, 03 Jan 2024 17:22:14 GMT',
+616 silly get     vary: 'Accept-Encoding',
+616 silly get     server: 'cloudflare' } ]
+617 verbose etag https://registry.npmjs.org/artillery-plugin-fake-data from cache
+618 verbose get saving artillery-plugin-fake-data to /Users/akshaylahudkar/.npm/registry.npmjs.org/artillery-plugin-fake-data/.cache.json
+619 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+620 http 304 https://registry.npmjs.org/@aws-sdk%2fcredential-providers
+621 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+621 verbose headers   connection: 'keep-alive',
+621 verbose headers   'cf-ray': '84035d1cfd481d95-BLR',
+621 verbose headers   'cf-cache-status': 'HIT',
+621 verbose headers   age: '56',
+621 verbose headers   'cache-control': 'public, max-age=300',
+621 verbose headers   etag: '"eac41264d365cf0504e4da88211fe999"',
+621 verbose headers   'last-modified': 'Wed, 03 Jan 2024 20:28:42 GMT',
+621 verbose headers   vary: 'Accept-Encoding',
+621 verbose headers   server: 'cloudflare' }
+622 silly get cb [ 304,
+622 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+622 silly get     connection: 'keep-alive',
+622 silly get     'cf-ray': '84035d1cfd481d95-BLR',
+622 silly get     'cf-cache-status': 'HIT',
+622 silly get     age: '56',
+622 silly get     'cache-control': 'public, max-age=300',
+622 silly get     etag: '"eac41264d365cf0504e4da88211fe999"',
+622 silly get     'last-modified': 'Wed, 03 Jan 2024 20:28:42 GMT',
+622 silly get     vary: 'Accept-Encoding',
+622 silly get     server: 'cloudflare' } ]
+623 verbose etag https://registry.npmjs.org/@aws-sdk%2fcredential-providers from cache
+624 verbose get saving @aws-sdk/credential-providers to /Users/akshaylahudkar/.npm/registry.npmjs.org/_40aws-sdk_252fcredential-providers/.cache.json
+625 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+626 http 304 https://registry.npmjs.org/@oclif%2fplugin-help
+627 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+627 verbose headers   connection: 'keep-alive',
+627 verbose headers   'cf-ray': '84035d1cff431d31-BLR',
+627 verbose headers   'cf-cache-status': 'HIT',
+627 verbose headers   age: '54',
+627 verbose headers   'cache-control': 'public, max-age=300',
+627 verbose headers   etag: '"e36f788f039b2973bee434c55f7763c4"',
+627 verbose headers   'last-modified': 'Sat, 16 Dec 2023 11:46:45 GMT',
+627 verbose headers   vary: 'Accept-Encoding',
+627 verbose headers   server: 'cloudflare' }
+628 silly get cb [ 304,
+628 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+628 silly get     connection: 'keep-alive',
+628 silly get     'cf-ray': '84035d1cff431d31-BLR',
+628 silly get     'cf-cache-status': 'HIT',
+628 silly get     age: '54',
+628 silly get     'cache-control': 'public, max-age=300',
+628 silly get     etag: '"e36f788f039b2973bee434c55f7763c4"',
+628 silly get     'last-modified': 'Sat, 16 Dec 2023 11:46:45 GMT',
+628 silly get     vary: 'Accept-Encoding',
+628 silly get     server: 'cloudflare' } ]
+629 verbose etag https://registry.npmjs.org/@oclif%2fplugin-help from cache
+630 verbose get saving @oclif/plugin-help to /Users/akshaylahudkar/.npm/registry.npmjs.org/_40oclif_252fplugin-help/.cache.json
+631 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+632 http 304 https://registry.npmjs.org/@artilleryio%2fint-core
+633 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+633 verbose headers   connection: 'keep-alive',
+633 verbose headers   'cf-ray': '84035d1cf8f71da9-BLR',
+633 verbose headers   'cf-cache-status': 'HIT',
+633 verbose headers   age: '56',
+633 verbose headers   'cache-control': 'public, max-age=300',
+633 verbose headers   etag: '"3a55e08f3ed5c53ddd8304d59144d7d1"',
+633 verbose headers   'last-modified': 'Wed, 03 Jan 2024 17:21:58 GMT',
+633 verbose headers   vary: 'Accept-Encoding',
+633 verbose headers   server: 'cloudflare' }
+634 silly get cb [ 304,
+634 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+634 silly get     connection: 'keep-alive',
+634 silly get     'cf-ray': '84035d1cf8f71da9-BLR',
+634 silly get     'cf-cache-status': 'HIT',
+634 silly get     age: '56',
+634 silly get     'cache-control': 'public, max-age=300',
+634 silly get     etag: '"3a55e08f3ed5c53ddd8304d59144d7d1"',
+634 silly get     'last-modified': 'Wed, 03 Jan 2024 17:21:58 GMT',
+634 silly get     vary: 'Accept-Encoding',
+634 silly get     server: 'cloudflare' } ]
+635 verbose etag https://registry.npmjs.org/@artilleryio%2fint-core from cache
+636 verbose get saving @artilleryio/int-core to /Users/akshaylahudkar/.npm/registry.npmjs.org/_40artilleryio_252fint-core/.cache.json
+637 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+638 http 304 https://registry.npmjs.org/@oclif%2fcore
+639 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+639 verbose headers   connection: 'keep-alive',
+639 verbose headers   'cf-ray': '84035d1d0ee01d8d-BLR',
+639 verbose headers   'cf-cache-status': 'HIT',
+639 verbose headers   age: '54',
+639 verbose headers   'cache-control': 'public, max-age=300',
+639 verbose headers   etag: '"70d4fb8b9aedc0a83806fda9be6de570"',
+639 verbose headers   'last-modified': 'Tue, 02 Jan 2024 17:26:24 GMT',
+639 verbose headers   vary: 'Accept-Encoding',
+639 verbose headers   server: 'cloudflare' }
+640 silly get cb [ 304,
+640 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+640 silly get     connection: 'keep-alive',
+640 silly get     'cf-ray': '84035d1d0ee01d8d-BLR',
+640 silly get     'cf-cache-status': 'HIT',
+640 silly get     age: '54',
+640 silly get     'cache-control': 'public, max-age=300',
+640 silly get     etag: '"70d4fb8b9aedc0a83806fda9be6de570"',
+640 silly get     'last-modified': 'Tue, 02 Jan 2024 17:26:24 GMT',
+640 silly get     vary: 'Accept-Encoding',
+640 silly get     server: 'cloudflare' } ]
+641 verbose etag https://registry.npmjs.org/@oclif%2fcore from cache
+642 verbose get saving @oclif/core to /Users/akshaylahudkar/.npm/registry.npmjs.org/_40oclif_252fcore/.cache.json
+643 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+644 http 304 https://registry.npmjs.org/@oclif%2fplugin-not-found
+645 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+645 verbose headers   connection: 'keep-alive',
+645 verbose headers   'cf-ray': '84035d1d0f471d31-BLR',
+645 verbose headers   'cf-cache-status': 'HIT',
+645 verbose headers   age: '56',
+645 verbose headers   'cache-control': 'public, max-age=300',
+645 verbose headers   etag: '"f5db4c4b1a52dd558358fcc9f2258822"',
+645 verbose headers   'last-modified': 'Sun, 31 Dec 2023 02:46:32 GMT',
+645 verbose headers   vary: 'Accept-Encoding',
+645 verbose headers   server: 'cloudflare' }
+646 silly get cb [ 304,
+646 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+646 silly get     connection: 'keep-alive',
+646 silly get     'cf-ray': '84035d1d0f471d31-BLR',
+646 silly get     'cf-cache-status': 'HIT',
+646 silly get     age: '56',
+646 silly get     'cache-control': 'public, max-age=300',
+646 silly get     etag: '"f5db4c4b1a52dd558358fcc9f2258822"',
+646 silly get     'last-modified': 'Sun, 31 Dec 2023 02:46:32 GMT',
+646 silly get     vary: 'Accept-Encoding',
+646 silly get     server: 'cloudflare' } ]
+647 verbose etag https://registry.npmjs.org/@oclif%2fplugin-not-found from cache
+648 verbose get saving @oclif/plugin-not-found to /Users/akshaylahudkar/.npm/registry.npmjs.org/_40oclif_252fplugin-not-found/.cache.json
+649 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+650 http 304 https://registry.npmjs.org/async
+651 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+651 verbose headers   connection: 'keep-alive',
+651 verbose headers   'cf-ray': '84035d1d39481d20-BLR',
+651 verbose headers   'cf-cache-status': 'HIT',
+651 verbose headers   age: '59',
+651 verbose headers   'cache-control': 'public, max-age=300',
+651 verbose headers   etag: '"6c7399d87a5d64bc3253e25c31b51d4b"',
+651 verbose headers   'last-modified': 'Thu, 30 Nov 2023 14:10:10 GMT',
+651 verbose headers   vary: 'Accept-Encoding',
+651 verbose headers   server: 'cloudflare' }
+652 silly get cb [ 304,
+652 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+652 silly get     connection: 'keep-alive',
+652 silly get     'cf-ray': '84035d1d39481d20-BLR',
+652 silly get     'cf-cache-status': 'HIT',
+652 silly get     age: '59',
+652 silly get     'cache-control': 'public, max-age=300',
+652 silly get     etag: '"6c7399d87a5d64bc3253e25c31b51d4b"',
+652 silly get     'last-modified': 'Thu, 30 Nov 2023 14:10:10 GMT',
+652 silly get     vary: 'Accept-Encoding',
+652 silly get     server: 'cloudflare' } ]
+653 verbose etag https://registry.npmjs.org/async from cache
+654 verbose get saving async to /Users/akshaylahudkar/.npm/registry.npmjs.org/async/.cache.json
+655 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+656 http 304 https://registry.npmjs.org/debug
+657 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+657 verbose headers   connection: 'keep-alive',
+657 verbose headers   'cf-ray': '84035d1d3edd1da1-BLR',
+657 verbose headers   'cf-cache-status': 'HIT',
+657 verbose headers   age: '137',
+657 verbose headers   'cache-control': 'public, max-age=300',
+657 verbose headers   etag: '"0d90bc5a025b8e60730f673f1894cded"',
+657 verbose headers   'last-modified': 'Tue, 07 Nov 2023 05:00:35 GMT',
+657 verbose headers   vary: 'Accept-Encoding',
+657 verbose headers   server: 'cloudflare' }
+658 silly get cb [ 304,
+658 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+658 silly get     connection: 'keep-alive',
+658 silly get     'cf-ray': '84035d1d3edd1da1-BLR',
+658 silly get     'cf-cache-status': 'HIT',
+658 silly get     age: '137',
+658 silly get     'cache-control': 'public, max-age=300',
+658 silly get     etag: '"0d90bc5a025b8e60730f673f1894cded"',
+658 silly get     'last-modified': 'Tue, 07 Nov 2023 05:00:35 GMT',
+658 silly get     vary: 'Accept-Encoding',
+658 silly get     server: 'cloudflare' } ]
+659 verbose etag https://registry.npmjs.org/debug from cache
+660 verbose get saving debug to /Users/akshaylahudkar/.npm/registry.npmjs.org/debug/.cache.json
+661 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+662 http 304 https://registry.npmjs.org/nanoid
+663 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+663 verbose headers   connection: 'keep-alive',
+663 verbose headers   'cf-ray': '84035d1d3d9a1d95-BLR',
+663 verbose headers   'cf-cache-status': 'HIT',
+663 verbose headers   age: '90',
+663 verbose headers   'cache-control': 'public, max-age=300',
+663 verbose headers   etag: '"39b1d31db839a522615217bbe5f6ee93"',
+663 verbose headers   'last-modified': 'Tue, 26 Dec 2023 07:26:29 GMT',
+663 verbose headers   vary: 'Accept-Encoding',
+663 verbose headers   server: 'cloudflare' }
+664 silly get cb [ 304,
+664 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+664 silly get     connection: 'keep-alive',
+664 silly get     'cf-ray': '84035d1d3d9a1d95-BLR',
+664 silly get     'cf-cache-status': 'HIT',
+664 silly get     age: '90',
+664 silly get     'cache-control': 'public, max-age=300',
+664 silly get     etag: '"39b1d31db839a522615217bbe5f6ee93"',
+664 silly get     'last-modified': 'Tue, 26 Dec 2023 07:26:29 GMT',
+664 silly get     vary: 'Accept-Encoding',
+664 silly get     server: 'cloudflare' } ]
+665 verbose etag https://registry.npmjs.org/nanoid from cache
+666 verbose get saving nanoid to /Users/akshaylahudkar/.npm/registry.npmjs.org/nanoid/.cache.json
+667 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+668 http 304 https://registry.npmjs.org/sqs-consumer
+669 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+669 verbose headers   connection: 'keep-alive',
+669 verbose headers   'cf-ray': '84035d1d392726b9-BLR',
+669 verbose headers   'cf-cache-status': 'HIT',
+669 verbose headers   age: '55',
+669 verbose headers   'cache-control': 'public, max-age=300',
+669 verbose headers   etag: '"5ac779599575f3750108c153d4c1c29d"',
+669 verbose headers   'last-modified': 'Fri, 15 Dec 2023 01:12:48 GMT',
+669 verbose headers   vary: 'Accept-Encoding',
+669 verbose headers   server: 'cloudflare' }
+670 silly get cb [ 304,
+670 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+670 silly get     connection: 'keep-alive',
+670 silly get     'cf-ray': '84035d1d392726b9-BLR',
+670 silly get     'cf-cache-status': 'HIT',
+670 silly get     age: '55',
+670 silly get     'cache-control': 'public, max-age=300',
+670 silly get     etag: '"5ac779599575f3750108c153d4c1c29d"',
+670 silly get     'last-modified': 'Fri, 15 Dec 2023 01:12:48 GMT',
+670 silly get     vary: 'Accept-Encoding',
+670 silly get     server: 'cloudflare' } ]
+671 verbose etag https://registry.npmjs.org/sqs-consumer from cache
+672 verbose get saving sqs-consumer to /Users/akshaylahudkar/.npm/registry.npmjs.org/sqs-consumer/.cache.json
+673 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+674 http 304 https://registry.npmjs.org/csv-parse
+675 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+675 verbose headers   connection: 'keep-alive',
+675 verbose headers   'cf-ray': '84035d1d3a5c1d91-BLR',
+675 verbose headers   'cf-cache-status': 'HIT',
+675 verbose headers   age: '55',
+675 verbose headers   'cache-control': 'public, max-age=300',
+675 verbose headers   etag: '"f0dee2cdbace84ec04f8759fd83e6f26"',
+675 verbose headers   'last-modified': 'Fri, 08 Dec 2023 17:11:06 GMT',
+675 verbose headers   vary: 'Accept-Encoding',
+675 verbose headers   server: 'cloudflare' }
+676 silly get cb [ 304,
+676 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+676 silly get     connection: 'keep-alive',
+676 silly get     'cf-ray': '84035d1d3a5c1d91-BLR',
+676 silly get     'cf-cache-status': 'HIT',
+676 silly get     age: '55',
+676 silly get     'cache-control': 'public, max-age=300',
+676 silly get     etag: '"f0dee2cdbace84ec04f8759fd83e6f26"',
+676 silly get     'last-modified': 'Fri, 08 Dec 2023 17:11:06 GMT',
+676 silly get     vary: 'Accept-Encoding',
+676 silly get     server: 'cloudflare' } ]
+677 verbose etag https://registry.npmjs.org/csv-parse from cache
+678 verbose get saving csv-parse to /Users/akshaylahudkar/.npm/registry.npmjs.org/csv-parse/.cache.json
+679 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+680 http 304 https://registry.npmjs.org/ci-info
+681 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+681 verbose headers   connection: 'keep-alive',
+681 verbose headers   'cf-ray': '84035d1d392426b9-BLR',
+681 verbose headers   'cf-cache-status': 'HIT',
+681 verbose headers   age: '60',
+681 verbose headers   'cache-control': 'public, max-age=300',
+681 verbose headers   etag: '"0265490d0748a32fb91d6998a2ffdc97"',
+681 verbose headers   'last-modified': 'Sun, 29 Oct 2023 06:41:24 GMT',
+681 verbose headers   vary: 'Accept-Encoding',
+681 verbose headers   server: 'cloudflare' }
+682 silly get cb [ 304,
+682 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+682 silly get     connection: 'keep-alive',
+682 silly get     'cf-ray': '84035d1d392426b9-BLR',
+682 silly get     'cf-cache-status': 'HIT',
+682 silly get     age: '60',
+682 silly get     'cache-control': 'public, max-age=300',
+682 silly get     etag: '"0265490d0748a32fb91d6998a2ffdc97"',
+682 silly get     'last-modified': 'Sun, 29 Oct 2023 06:41:24 GMT',
+682 silly get     vary: 'Accept-Encoding',
+682 silly get     server: 'cloudflare' } ]
+683 verbose etag https://registry.npmjs.org/ci-info from cache
+684 verbose get saving ci-info to /Users/akshaylahudkar/.npm/registry.npmjs.org/ci-info/.cache.json
+685 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+686 http 304 https://registry.npmjs.org/fs-extra
+687 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+687 verbose headers   connection: 'keep-alive',
+687 verbose headers   'cf-ray': '84035d1d3f9b26b5-BLR',
+687 verbose headers   'cf-cache-status': 'HIT',
+687 verbose headers   age: '119',
+687 verbose headers   'cache-control': 'public, max-age=300',
+687 verbose headers   etag: '"9c14da616cfef6b68914ba3437742996"',
+687 verbose headers   'last-modified': 'Tue, 28 Nov 2023 00:46:36 GMT',
+687 verbose headers   vary: 'Accept-Encoding',
+687 verbose headers   server: 'cloudflare' }
+688 silly get cb [ 304,
+688 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+688 silly get     connection: 'keep-alive',
+688 silly get     'cf-ray': '84035d1d3f9b26b5-BLR',
+688 silly get     'cf-cache-status': 'HIT',
+688 silly get     age: '119',
+688 silly get     'cache-control': 'public, max-age=300',
+688 silly get     etag: '"9c14da616cfef6b68914ba3437742996"',
+688 silly get     'last-modified': 'Tue, 28 Nov 2023 00:46:36 GMT',
+688 silly get     vary: 'Accept-Encoding',
+688 silly get     server: 'cloudflare' } ]
+689 verbose etag https://registry.npmjs.org/fs-extra from cache
+690 verbose get saving fs-extra to /Users/akshaylahudkar/.npm/registry.npmjs.org/fs-extra/.cache.json
+691 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+692 http 304 https://registry.npmjs.org/cross-spawn
+693 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+693 verbose headers   connection: 'keep-alive',
+693 verbose headers   'cf-ray': '84035d1d3c7b1d1c-BLR',
+693 verbose headers   'cf-cache-status': 'HIT',
+693 verbose headers   age: '125',
+693 verbose headers   'cache-control': 'public, max-age=300',
+693 verbose headers   etag: '"d7b0f907ed2ebf0bb83f4970d1784644"',
+693 verbose headers   'last-modified': 'Thu, 22 Jun 2023 16:31:39 GMT',
+693 verbose headers   vary: 'Accept-Encoding',
+693 verbose headers   server: 'cloudflare' }
+694 silly get cb [ 304,
+694 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+694 silly get     connection: 'keep-alive',
+694 silly get     'cf-ray': '84035d1d3c7b1d1c-BLR',
+694 silly get     'cf-cache-status': 'HIT',
+694 silly get     age: '125',
+694 silly get     'cache-control': 'public, max-age=300',
+694 silly get     etag: '"d7b0f907ed2ebf0bb83f4970d1784644"',
+694 silly get     'last-modified': 'Thu, 22 Jun 2023 16:31:39 GMT',
+694 silly get     vary: 'Accept-Encoding',
+694 silly get     server: 'cloudflare' } ]
+695 verbose etag https://registry.npmjs.org/cross-spawn from cache
+696 verbose get saving cross-spawn to /Users/akshaylahudkar/.npm/registry.npmjs.org/cross-spawn/.cache.json
+697 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+698 http 304 https://registry.npmjs.org/eventemitter3
+699 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+699 verbose headers   connection: 'keep-alive',
+699 verbose headers   'cf-ray': '84035d1d3c851d18-BLR',
+699 verbose headers   'cf-cache-status': 'HIT',
+699 verbose headers   age: '68',
+699 verbose headers   'cache-control': 'public, max-age=300',
+699 verbose headers   etag: '"114075cbfd737b5770e42d1010659889"',
+699 verbose headers   'last-modified': 'Sun, 30 Apr 2023 19:49:15 GMT',
+699 verbose headers   vary: 'Accept-Encoding',
+699 verbose headers   server: 'cloudflare' }
+700 silly get cb [ 304,
+700 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+700 silly get     connection: 'keep-alive',
+700 silly get     'cf-ray': '84035d1d3c851d18-BLR',
+700 silly get     'cf-cache-status': 'HIT',
+700 silly get     age: '68',
+700 silly get     'cache-control': 'public, max-age=300',
+700 silly get     etag: '"114075cbfd737b5770e42d1010659889"',
+700 silly get     'last-modified': 'Sun, 30 Apr 2023 19:49:15 GMT',
+700 silly get     vary: 'Accept-Encoding',
+700 silly get     server: 'cloudflare' } ]
+701 verbose etag https://registry.npmjs.org/eventemitter3 from cache
+702 verbose get saving eventemitter3 to /Users/akshaylahudkar/.npm/registry.npmjs.org/eventemitter3/.cache.json
+703 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+704 http 304 https://registry.npmjs.org/is-builtin-module
+705 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+705 verbose headers   connection: 'keep-alive',
+705 verbose headers   'cf-ray': '84035d1d4fb61d89-BLR',
+705 verbose headers   'cf-cache-status': 'HIT',
+705 verbose headers   age: '56',
+705 verbose headers   'cache-control': 'public, max-age=300',
+705 verbose headers   etag: '"54826fd686f55c2f273aaac172ba70c0"',
+705 verbose headers   'last-modified': 'Tue, 31 Jan 2023 05:53:22 GMT',
+705 verbose headers   vary: 'Accept-Encoding',
+705 verbose headers   server: 'cloudflare' }
+706 silly get cb [ 304,
+706 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+706 silly get     connection: 'keep-alive',
+706 silly get     'cf-ray': '84035d1d4fb61d89-BLR',
+706 silly get     'cf-cache-status': 'HIT',
+706 silly get     age: '56',
+706 silly get     'cache-control': 'public, max-age=300',
+706 silly get     etag: '"54826fd686f55c2f273aaac172ba70c0"',
+706 silly get     'last-modified': 'Tue, 31 Jan 2023 05:53:22 GMT',
+706 silly get     vary: 'Accept-Encoding',
+706 silly get     server: 'cloudflare' } ]
+707 verbose etag https://registry.npmjs.org/is-builtin-module from cache
+708 verbose get saving is-builtin-module to /Users/akshaylahudkar/.npm/registry.npmjs.org/is-builtin-module/.cache.json
+709 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+710 http 304 https://registry.npmjs.org/joi
+711 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+711 verbose headers   connection: 'keep-alive',
+711 verbose headers   'cf-ray': '84035d1d3c871d18-BLR',
+711 verbose headers   'cf-cache-status': 'HIT',
+711 verbose headers   age: '56',
+711 verbose headers   'cache-control': 'public, max-age=300',
+711 verbose headers   etag: '"7b45722f8097426334aff13d175acec6"',
+711 verbose headers   'last-modified': 'Mon, 01 Jan 2024 12:57:44 GMT',
+711 verbose headers   vary: 'Accept-Encoding',
+711 verbose headers   server: 'cloudflare' }
+712 silly get cb [ 304,
+712 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+712 silly get     connection: 'keep-alive',
+712 silly get     'cf-ray': '84035d1d3c871d18-BLR',
+712 silly get     'cf-cache-status': 'HIT',
+712 silly get     age: '56',
+712 silly get     'cache-control': 'public, max-age=300',
+712 silly get     etag: '"7b45722f8097426334aff13d175acec6"',
+712 silly get     'last-modified': 'Mon, 01 Jan 2024 12:57:44 GMT',
+712 silly get     vary: 'Accept-Encoding',
+712 silly get     server: 'cloudflare' } ]
+713 verbose etag https://registry.npmjs.org/joi from cache
+714 verbose get saving joi to /Users/akshaylahudkar/.npm/registry.npmjs.org/joi/.cache.json
+715 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+716 http 304 https://registry.npmjs.org/detective
+717 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+717 verbose headers   connection: 'keep-alive',
+717 verbose headers   'cf-ray': '84035d1d4f3f1d8d-BLR',
+717 verbose headers   'cf-cache-status': 'HIT',
+717 verbose headers   age: '55',
+717 verbose headers   'cache-control': 'public, max-age=300',
+717 verbose headers   etag: '"b55e03de59b4358adfa45a6b586fb241"',
+717 verbose headers   'last-modified': 'Fri, 11 Nov 2022 06:34:28 GMT',
+717 verbose headers   vary: 'Accept-Encoding',
+717 verbose headers   server: 'cloudflare' }
+718 silly get cb [ 304,
+718 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+718 silly get     connection: 'keep-alive',
+718 silly get     'cf-ray': '84035d1d4f3f1d8d-BLR',
+718 silly get     'cf-cache-status': 'HIT',
+718 silly get     age: '55',
+718 silly get     'cache-control': 'public, max-age=300',
+718 silly get     etag: '"b55e03de59b4358adfa45a6b586fb241"',
+718 silly get     'last-modified': 'Fri, 11 Nov 2022 06:34:28 GMT',
+718 silly get     vary: 'Accept-Encoding',
+718 silly get     server: 'cloudflare' } ]
+719 verbose etag https://registry.npmjs.org/detective from cache
+720 verbose get saving detective to /Users/akshaylahudkar/.npm/registry.npmjs.org/detective/.cache.json
+721 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+722 http 304 https://registry.npmjs.org/ora
+723 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+723 verbose headers   connection: 'keep-alive',
+723 verbose headers   'cf-ray': '84035d1d4f741d31-BLR',
+723 verbose headers   'cf-cache-status': 'HIT',
+723 verbose headers   age: '73',
+723 verbose headers   'cache-control': 'public, max-age=300',
+723 verbose headers   etag: '"46a6fe95c1458ff2bec0a90e23714f13"',
+723 verbose headers   'last-modified': 'Sat, 23 Dec 2023 11:38:34 GMT',
+723 verbose headers   vary: 'Accept-Encoding',
+723 verbose headers   server: 'cloudflare' }
+724 silly get cb [ 304,
+724 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+724 silly get     connection: 'keep-alive',
+724 silly get     'cf-ray': '84035d1d4f741d31-BLR',
+724 silly get     'cf-cache-status': 'HIT',
+724 silly get     age: '73',
+724 silly get     'cache-control': 'public, max-age=300',
+724 silly get     etag: '"46a6fe95c1458ff2bec0a90e23714f13"',
+724 silly get     'last-modified': 'Sat, 23 Dec 2023 11:38:34 GMT',
+724 silly get     vary: 'Accept-Encoding',
+724 silly get     server: 'cloudflare' } ]
+725 verbose etag https://registry.npmjs.org/ora from cache
+726 verbose get saving ora to /Users/akshaylahudkar/.npm/registry.npmjs.org/ora/.cache.json
+727 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+728 http 304 https://registry.npmjs.org/cli-table3
+729 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+729 verbose headers   connection: 'keep-alive',
+729 verbose headers   'cf-ray': '84035d1d3a2d1d3d-BLR',
+729 verbose headers   'cf-cache-status': 'HIT',
+729 verbose headers   age: '56',
+729 verbose headers   'cache-control': 'public, max-age=300',
+729 verbose headers   etag: '"48288bade476921a4b5caf142d2a5e17"',
+729 verbose headers   'last-modified': 'Thu, 15 Sep 2022 19:20:42 GMT',
+729 verbose headers   vary: 'Accept-Encoding',
+729 verbose headers   server: 'cloudflare' }
+730 silly get cb [ 304,
+730 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+730 silly get     connection: 'keep-alive',
+730 silly get     'cf-ray': '84035d1d3a2d1d3d-BLR',
+730 silly get     'cf-cache-status': 'HIT',
+730 silly get     age: '56',
+730 silly get     'cache-control': 'public, max-age=300',
+730 silly get     etag: '"48288bade476921a4b5caf142d2a5e17"',
+730 silly get     'last-modified': 'Thu, 15 Sep 2022 19:20:42 GMT',
+730 silly get     vary: 'Accept-Encoding',
+730 silly get     server: 'cloudflare' } ]
+731 verbose etag https://registry.npmjs.org/cli-table3 from cache
+732 verbose get saving cli-table3 to /Users/akshaylahudkar/.npm/registry.npmjs.org/cli-table3/.cache.json
+733 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+734 http 304 https://registry.npmjs.org/walk-sync
+735 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+735 verbose headers   connection: 'keep-alive',
+735 verbose headers   'cf-ray': '84035d1d4f211da5-BLR',
+735 verbose headers   'cf-cache-status': 'HIT',
+735 verbose headers   age: '55',
+735 verbose headers   'cache-control': 'public, max-age=300',
+735 verbose headers   etag: '"58d415aa30140f164c058ae0e6b50360"',
+735 verbose headers   'last-modified': 'Tue, 28 Jun 2022 21:34:15 GMT',
+735 verbose headers   vary: 'Accept-Encoding',
+735 verbose headers   server: 'cloudflare' }
+736 silly get cb [ 304,
+736 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+736 silly get     connection: 'keep-alive',
+736 silly get     'cf-ray': '84035d1d4f211da5-BLR',
+736 silly get     'cf-cache-status': 'HIT',
+736 silly get     age: '55',
+736 silly get     'cache-control': 'public, max-age=300',
+736 silly get     etag: '"58d415aa30140f164c058ae0e6b50360"',
+736 silly get     'last-modified': 'Tue, 28 Jun 2022 21:34:15 GMT',
+736 silly get     vary: 'Accept-Encoding',
+736 silly get     server: 'cloudflare' } ]
+737 verbose etag https://registry.npmjs.org/walk-sync from cache
+738 verbose get saving walk-sync to /Users/akshaylahudkar/.npm/registry.npmjs.org/walk-sync/.cache.json
+739 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+740 http 304 https://registry.npmjs.org/dependency-tree
+741 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+741 verbose headers   connection: 'keep-alive',
+741 verbose headers   'cf-ray': '84035d1d3c841d18-BLR',
+741 verbose headers   'cf-cache-status': 'HIT',
+741 verbose headers   age: '56',
+741 verbose headers   'cache-control': 'public, max-age=300',
+741 verbose headers   etag: '"37bfdfce47ad4cab635c9b0e8e633e0b"',
+741 verbose headers   'last-modified': 'Sat, 27 May 2023 11:45:48 GMT',
+741 verbose headers   vary: 'Accept-Encoding',
+741 verbose headers   server: 'cloudflare' }
+742 silly get cb [ 304,
+742 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+742 silly get     connection: 'keep-alive',
+742 silly get     'cf-ray': '84035d1d3c841d18-BLR',
+742 silly get     'cf-cache-status': 'HIT',
+742 silly get     age: '56',
+742 silly get     'cache-control': 'public, max-age=300',
+742 silly get     etag: '"37bfdfce47ad4cab635c9b0e8e633e0b"',
+742 silly get     'last-modified': 'Sat, 27 May 2023 11:45:48 GMT',
+742 silly get     vary: 'Accept-Encoding',
+742 silly get     server: 'cloudflare' } ]
+743 verbose etag https://registry.npmjs.org/dependency-tree from cache
+744 verbose get saving dependency-tree to /Users/akshaylahudkar/.npm/registry.npmjs.org/dependency-tree/.cache.json
+745 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+746 http 304 https://registry.npmjs.org/tmp
+747 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+747 verbose headers   connection: 'keep-alive',
+747 verbose headers   'cf-ray': '84035d1d4f1f1da5-BLR',
+747 verbose headers   'cf-cache-status': 'HIT',
+747 verbose headers   age: '56',
+747 verbose headers   'cache-control': 'public, max-age=300',
+747 verbose headers   etag: '"997109c3af0ddc1782c7d37e2a6243fc"',
+747 verbose headers   'last-modified': 'Sun, 09 Jul 2023 22:10:12 GMT',
+747 verbose headers   vary: 'Accept-Encoding',
+747 verbose headers   server: 'cloudflare' }
+748 silly get cb [ 304,
+748 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+748 silly get     connection: 'keep-alive',
+748 silly get     'cf-ray': '84035d1d4f1f1da5-BLR',
+748 silly get     'cf-cache-status': 'HIT',
+748 silly get     age: '56',
+748 silly get     'cache-control': 'public, max-age=300',
+748 silly get     etag: '"997109c3af0ddc1782c7d37e2a6243fc"',
+748 silly get     'last-modified': 'Sun, 09 Jul 2023 22:10:12 GMT',
+748 silly get     vary: 'Accept-Encoding',
+748 silly get     server: 'cloudflare' } ]
+749 verbose etag https://registry.npmjs.org/tmp from cache
+750 verbose get saving tmp to /Users/akshaylahudkar/.npm/registry.npmjs.org/tmp/.cache.json
+751 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+752 http 304 https://registry.npmjs.org/try-require
+753 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+753 verbose headers   connection: 'keep-alive',
+753 verbose headers   'cf-ray': '84035d1d49c11d2d-BLR',
+753 verbose headers   'cf-cache-status': 'HIT',
+753 verbose headers   age: '56',
+753 verbose headers   'cache-control': 'public, max-age=300',
+753 verbose headers   etag: '"cb36fbfe7468eae4f00d972bcabec4ed"',
+753 verbose headers   'last-modified': 'Mon, 27 Jun 2022 21:56:35 GMT',
+753 verbose headers   vary: 'Accept-Encoding',
+753 verbose headers   server: 'cloudflare' }
+754 silly get cb [ 304,
+754 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+754 silly get     connection: 'keep-alive',
+754 silly get     'cf-ray': '84035d1d49c11d2d-BLR',
+754 silly get     'cf-cache-status': 'HIT',
+754 silly get     age: '56',
+754 silly get     'cache-control': 'public, max-age=300',
+754 silly get     etag: '"cb36fbfe7468eae4f00d972bcabec4ed"',
+754 silly get     'last-modified': 'Mon, 27 Jun 2022 21:56:35 GMT',
+754 silly get     vary: 'Accept-Encoding',
+754 silly get     server: 'cloudflare' } ]
+755 verbose etag https://registry.npmjs.org/try-require from cache
+756 verbose get saving try-require to /Users/akshaylahudkar/.npm/registry.npmjs.org/try-require/.cache.json
+757 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+758 http 304 https://registry.npmjs.org/temp
+759 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+759 verbose headers   connection: 'keep-alive',
+759 verbose headers   'cf-ray': '84035d1d48681d14-BLR',
+759 verbose headers   'cf-cache-status': 'HIT',
+759 verbose headers   age: '233',
+759 verbose headers   'cache-control': 'public, max-age=300',
+759 verbose headers   etag: '"ca30d02277d5af5b1ff3ddee4431ac35"',
+759 verbose headers   'last-modified': 'Fri, 10 Feb 2023 19:41:17 GMT',
+759 verbose headers   vary: 'Accept-Encoding',
+759 verbose headers   server: 'cloudflare' }
+760 silly get cb [ 304,
+760 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+760 silly get     connection: 'keep-alive',
+760 silly get     'cf-ray': '84035d1d48681d14-BLR',
+760 silly get     'cf-cache-status': 'HIT',
+760 silly get     age: '233',
+760 silly get     'cache-control': 'public, max-age=300',
+760 silly get     etag: '"ca30d02277d5af5b1ff3ddee4431ac35"',
+760 silly get     'last-modified': 'Fri, 10 Feb 2023 19:41:17 GMT',
+760 silly get     vary: 'Accept-Encoding',
+760 silly get     server: 'cloudflare' } ]
+761 verbose etag https://registry.npmjs.org/temp from cache
+762 verbose get saving temp to /Users/akshaylahudkar/.npm/registry.npmjs.org/temp/.cache.json
+763 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+764 http 304 https://registry.npmjs.org/posthog-node
+765 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+765 verbose headers   connection: 'keep-alive',
+765 verbose headers   'cf-ray': '84035d1d4f5c1d35-BLR',
+765 verbose headers   'cf-cache-status': 'HIT',
+765 verbose headers   age: '55',
+765 verbose headers   'cache-control': 'public, max-age=300',
+765 verbose headers   etag: '"ab75309c7646578255c20c00eb91139a"',
+765 verbose headers   'last-modified': 'Tue, 02 Jan 2024 14:53:41 GMT',
+765 verbose headers   vary: 'Accept-Encoding',
+765 verbose headers   server: 'cloudflare' }
+766 silly get cb [ 304,
+766 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+766 silly get     connection: 'keep-alive',
+766 silly get     'cf-ray': '84035d1d4f5c1d35-BLR',
+766 silly get     'cf-cache-status': 'HIT',
+766 silly get     age: '55',
+766 silly get     'cache-control': 'public, max-age=300',
+766 silly get     etag: '"ab75309c7646578255c20c00eb91139a"',
+766 silly get     'last-modified': 'Tue, 02 Jan 2024 14:53:41 GMT',
+766 silly get     vary: 'Accept-Encoding',
+766 silly get     server: 'cloudflare' } ]
+767 verbose etag https://registry.npmjs.org/posthog-node from cache
+768 verbose get saving posthog-node to /Users/akshaylahudkar/.npm/registry.npmjs.org/posthog-node/.cache.json
+769 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+770 http 304 https://registry.npmjs.org/ip
+771 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+771 verbose headers   connection: 'keep-alive',
+771 verbose headers   'cf-ray': '84035d1d3a6d32af-BLR',
+771 verbose headers   'cf-cache-status': 'HIT',
+771 verbose headers   age: '55',
+771 verbose headers   'cache-control': 'public, max-age=300',
+771 verbose headers   etag: '"7294876cff800cdf69dee91806ccb68d"',
+771 verbose headers   'last-modified': 'Sun, 19 Jun 2022 02:20:55 GMT',
+771 verbose headers   vary: 'Accept-Encoding',
+771 verbose headers   server: 'cloudflare' }
+772 silly get cb [ 304,
+772 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+772 silly get     connection: 'keep-alive',
+772 silly get     'cf-ray': '84035d1d3a6d32af-BLR',
+772 silly get     'cf-cache-status': 'HIT',
+772 silly get     age: '55',
+772 silly get     'cache-control': 'public, max-age=300',
+772 silly get     etag: '"7294876cff800cdf69dee91806ccb68d"',
+772 silly get     'last-modified': 'Sun, 19 Jun 2022 02:20:55 GMT',
+772 silly get     vary: 'Accept-Encoding',
+772 silly get     server: 'cloudflare' } ]
+773 verbose etag https://registry.npmjs.org/ip from cache
+774 verbose get saving ip to /Users/akshaylahudkar/.npm/registry.npmjs.org/ip/.cache.json
+775 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+776 verbose get https://registry.npmjs.org/@artilleryio%2fint-commons not expired, no request
+777 http 304 https://registry.npmjs.org/aws-sdk
+778 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+778 verbose headers   connection: 'keep-alive',
+778 verbose headers   'cf-ray': '84035d1d6fc726b5-BLR',
+778 verbose headers   'cf-cache-status': 'HIT',
+778 verbose headers   age: '56',
+778 verbose headers   'cache-control': 'public, max-age=300',
+778 verbose headers   etag: '"0b6bd014166d5c1ee6485620f0e04ead"',
+778 verbose headers   'last-modified': 'Wed, 03 Jan 2024 19:35:49 GMT',
+778 verbose headers   vary: 'Accept-Encoding',
+778 verbose headers   server: 'cloudflare' }
+779 silly get cb [ 304,
+779 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+779 silly get     connection: 'keep-alive',
+779 silly get     'cf-ray': '84035d1d6fc726b5-BLR',
+779 silly get     'cf-cache-status': 'HIT',
+779 silly get     age: '56',
+779 silly get     'cache-control': 'public, max-age=300',
+779 silly get     etag: '"0b6bd014166d5c1ee6485620f0e04ead"',
+779 silly get     'last-modified': 'Wed, 03 Jan 2024 19:35:49 GMT',
+779 silly get     vary: 'Accept-Encoding',
+779 silly get     server: 'cloudflare' } ]
+780 verbose etag https://registry.npmjs.org/aws-sdk from cache
+781 verbose get saving aws-sdk to /Users/akshaylahudkar/.npm/registry.npmjs.org/aws-sdk/.cache.json
+782 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+783 http 304 https://registry.npmjs.org/yaml-js
+784 verbose headers { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+784 verbose headers   connection: 'keep-alive',
+784 verbose headers   'cf-ray': '84035d1d6aa732af-BLR',
+784 verbose headers   'cf-cache-status': 'HIT',
+784 verbose headers   age: '55',
+784 verbose headers   'cache-control': 'public, max-age=300',
+784 verbose headers   etag: '"9daa2c5a34f0cbf3cf3123afbdb9a5d4"',
+784 verbose headers   'last-modified': 'Wed, 12 Jul 2023 19:13:23 GMT',
+784 verbose headers   vary: 'Accept-Encoding',
+784 verbose headers   server: 'cloudflare' }
+785 silly get cb [ 304,
+785 silly get   { date: 'Thu, 04 Jan 2024 12:07:53 GMT',
+785 silly get     connection: 'keep-alive',
+785 silly get     'cf-ray': '84035d1d6aa732af-BLR',
+785 silly get     'cf-cache-status': 'HIT',
+785 silly get     age: '55',
+785 silly get     'cache-control': 'public, max-age=300',
+785 silly get     etag: '"9daa2c5a34f0cbf3cf3123afbdb9a5d4"',
+785 silly get     'last-modified': 'Wed, 12 Jul 2023 19:13:23 GMT',
+785 silly get     vary: 'Accept-Encoding',
+785 silly get     server: 'cloudflare' } ]
+786 verbose etag https://registry.npmjs.org/yaml-js from cache
+787 verbose get saving yaml-js to /Users/akshaylahudkar/.npm/registry.npmjs.org/yaml-js/.cache.json
+788 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+789 silly resolveWithNewModule js-yaml@3.14.1 checking installable status
+790 silly cache add args [ 'js-yaml@^3.13.1', null ]
+791 verbose cache add spec js-yaml@^3.13.1
+792 silly cache add parsed spec Result {
+792 silly cache add   raw: 'js-yaml@^3.13.1',
+792 silly cache add   scope: null,
+792 silly cache add   escapedName: 'js-yaml',
+792 silly cache add   name: 'js-yaml',
+792 silly cache add   rawSpec: '^3.13.1',
+792 silly cache add   spec: '>=3.13.1 <4.0.0',
+792 silly cache add   type: 'range' }
+793 silly addNamed js-yaml@>=3.13.1 <4.0.0
+794 verbose addNamed ">=3.13.1 <4.0.0" is a valid semver range for js-yaml
+795 silly addNameRange { name: 'js-yaml', range: '>=3.13.1 <4.0.0', hasData: false }
+796 silly mapToRegistry name js-yaml
+797 silly mapToRegistry using default registry
+798 silly mapToRegistry registry https://registry.npmjs.org/
+799 silly mapToRegistry data Result {
+799 silly mapToRegistry   raw: 'js-yaml',
+799 silly mapToRegistry   scope: null,
+799 silly mapToRegistry   escapedName: 'js-yaml',
+799 silly mapToRegistry   name: 'js-yaml',
+799 silly mapToRegistry   rawSpec: '',
+799 silly mapToRegistry   spec: 'latest',
+799 silly mapToRegistry   type: 'tag' }
+800 silly mapToRegistry uri https://registry.npmjs.org/js-yaml
+801 verbose addNameRange registry:https://registry.npmjs.org/js-yaml not in flight; fetching
+802 silly resolveWithNewModule artillery-engine-playwright@1.1.0 checking installable status
+803 silly cache add args [ 'artillery-engine-playwright@1.1.0', null ]
+804 verbose cache add spec artillery-engine-playwright@1.1.0
+805 silly cache add parsed spec Result {
+805 silly cache add   raw: 'artillery-engine-playwright@1.1.0',
+805 silly cache add   scope: null,
+805 silly cache add   escapedName: 'artillery-engine-playwright',
+805 silly cache add   name: 'artillery-engine-playwright',
+805 silly cache add   rawSpec: '1.1.0',
+805 silly cache add   spec: '1.1.0',
+805 silly cache add   type: 'version' }
+806 silly addNamed artillery-engine-playwright@1.1.0
+807 verbose addNamed "1.1.0" is a plain semver version for artillery-engine-playwright
+808 silly mapToRegistry name artillery-engine-playwright
+809 silly mapToRegistry using default registry
+810 silly mapToRegistry registry https://registry.npmjs.org/
+811 silly mapToRegistry data Result {
+811 silly mapToRegistry   raw: 'artillery-engine-playwright',
+811 silly mapToRegistry   scope: null,
+811 silly mapToRegistry   escapedName: 'artillery-engine-playwright',
+811 silly mapToRegistry   name: 'artillery-engine-playwright',
+811 silly mapToRegistry   rawSpec: '',
+811 silly mapToRegistry   spec: 'latest',
+811 silly mapToRegistry   type: 'tag' }
+812 silly mapToRegistry uri https://registry.npmjs.org/artillery-engine-playwright
+813 verbose addNameVersion registry:https://registry.npmjs.org/artillery-engine-playwright not in flight; fetching
+814 silly resolveWithNewModule archiver@5.3.2 checking installable status
+815 silly cache add args [ 'archiver@^5.3.1', null ]
+816 verbose cache add spec archiver@^5.3.1
+817 silly cache add parsed spec Result {
+817 silly cache add   raw: 'archiver@^5.3.1',
+817 silly cache add   scope: null,
+817 silly cache add   escapedName: 'archiver',
+817 silly cache add   name: 'archiver',
+817 silly cache add   rawSpec: '^5.3.1',
+817 silly cache add   spec: '>=5.3.1 <6.0.0',
+817 silly cache add   type: 'range' }
+818 silly addNamed archiver@>=5.3.1 <6.0.0
+819 verbose addNamed ">=5.3.1 <6.0.0" is a valid semver range for archiver
+820 silly addNameRange { name: 'archiver', range: '>=5.3.1 <6.0.0', hasData: false }
+821 silly mapToRegistry name archiver
+822 silly mapToRegistry using default registry
+823 silly mapToRegistry registry https://registry.npmjs.org/
+824 silly mapToRegistry data Result {
+824 silly mapToRegistry   raw: 'archiver',
+824 silly mapToRegistry   scope: null,
+824 silly mapToRegistry   escapedName: 'archiver',
+824 silly mapToRegistry   name: 'archiver',
+824 silly mapToRegistry   rawSpec: '',
+824 silly mapToRegistry   spec: 'latest',
+824 silly mapToRegistry   type: 'tag' }
+825 silly mapToRegistry uri https://registry.npmjs.org/archiver
+826 verbose addNameRange registry:https://registry.npmjs.org/archiver not in flight; fetching
+827 silly resolveWithNewModule artillery-plugin-apdex@1.0.1 checking installable status
+828 silly cache add args [ 'artillery-plugin-apdex@1.0.1', null ]
+829 verbose cache add spec artillery-plugin-apdex@1.0.1
+830 silly cache add parsed spec Result {
+830 silly cache add   raw: 'artillery-plugin-apdex@1.0.1',
+830 silly cache add   scope: null,
+830 silly cache add   escapedName: 'artillery-plugin-apdex',
+830 silly cache add   name: 'artillery-plugin-apdex',
+830 silly cache add   rawSpec: '1.0.1',
+830 silly cache add   spec: '1.0.1',
+830 silly cache add   type: 'version' }
+831 silly addNamed artillery-plugin-apdex@1.0.1
+832 verbose addNamed "1.0.1" is a plain semver version for artillery-plugin-apdex
+833 silly mapToRegistry name artillery-plugin-apdex
+834 silly mapToRegistry using default registry
+835 silly mapToRegistry registry https://registry.npmjs.org/
+836 silly mapToRegistry data Result {
+836 silly mapToRegistry   raw: 'artillery-plugin-apdex',
+836 silly mapToRegistry   scope: null,
+836 silly mapToRegistry   escapedName: 'artillery-plugin-apdex',
+836 silly mapToRegistry   name: 'artillery-plugin-apdex',
+836 silly mapToRegistry   rawSpec: '',
+836 silly mapToRegistry   spec: 'latest',
+836 silly mapToRegistry   type: 'tag' }
+837 silly mapToRegistry uri https://registry.npmjs.org/artillery-plugin-apdex
+838 verbose addNameVersion registry:https://registry.npmjs.org/artillery-plugin-apdex not in flight; fetching
+839 silly resolveWithNewModule chalk@2.4.2 checking installable status
+840 silly cache add args [ 'chalk@^2.4.2', null ]
+841 verbose cache add spec chalk@^2.4.2
+842 silly cache add parsed spec Result {
+842 silly cache add   raw: 'chalk@^2.4.2',
+842 silly cache add   scope: null,
+842 silly cache add   escapedName: 'chalk',
+842 silly cache add   name: 'chalk',
+842 silly cache add   rawSpec: '^2.4.2',
+842 silly cache add   spec: '>=2.4.2 <3.0.0',
+842 silly cache add   type: 'range' }
+843 silly addNamed chalk@>=2.4.2 <3.0.0
+844 verbose addNamed ">=2.4.2 <3.0.0" is a valid semver range for chalk
+845 silly addNameRange { name: 'chalk', range: '>=2.4.2 <3.0.0', hasData: false }
+846 silly mapToRegistry name chalk
+847 silly mapToRegistry using default registry
+848 silly mapToRegistry registry https://registry.npmjs.org/
+849 silly mapToRegistry data Result {
+849 silly mapToRegistry   raw: 'chalk',
+849 silly mapToRegistry   scope: null,
+849 silly mapToRegistry   escapedName: 'chalk',
+849 silly mapToRegistry   name: 'chalk',
+849 silly mapToRegistry   rawSpec: '',
+849 silly mapToRegistry   spec: 'latest',
+849 silly mapToRegistry   type: 'tag' }
+850 silly mapToRegistry uri https://registry.npmjs.org/chalk
+851 verbose addNameRange registry:https://registry.npmjs.org/chalk not in flight; fetching
+852 silly resolveWithNewModule artillery-plugin-fake-data@1.0.2 checking installable status
+853 silly cache add args [ 'artillery-plugin-fake-data@1.0.2', null ]
+854 verbose cache add spec artillery-plugin-fake-data@1.0.2
+855 silly cache add parsed spec Result {
+855 silly cache add   raw: 'artillery-plugin-fake-data@1.0.2',
+855 silly cache add   scope: null,
+855 silly cache add   escapedName: 'artillery-plugin-fake-data',
+855 silly cache add   name: 'artillery-plugin-fake-data',
+855 silly cache add   rawSpec: '1.0.2',
+855 silly cache add   spec: '1.0.2',
+855 silly cache add   type: 'version' }
+856 silly addNamed artillery-plugin-fake-data@1.0.2
+857 verbose addNamed "1.0.2" is a plain semver version for artillery-plugin-fake-data
+858 silly mapToRegistry name artillery-plugin-fake-data
+859 silly mapToRegistry using default registry
+860 silly mapToRegistry registry https://registry.npmjs.org/
+861 silly mapToRegistry data Result {
+861 silly mapToRegistry   raw: 'artillery-plugin-fake-data',
+861 silly mapToRegistry   scope: null,
+861 silly mapToRegistry   escapedName: 'artillery-plugin-fake-data',
+861 silly mapToRegistry   name: 'artillery-plugin-fake-data',
+861 silly mapToRegistry   rawSpec: '',
+861 silly mapToRegistry   spec: 'latest',
+861 silly mapToRegistry   type: 'tag' }
+862 silly mapToRegistry uri https://registry.npmjs.org/artillery-plugin-fake-data
+863 verbose addNameVersion registry:https://registry.npmjs.org/artillery-plugin-fake-data not in flight; fetching
+864 silly resolveWithNewModule artillery-plugin-publish-metrics@2.9.0 checking installable status
+865 silly cache add args [ 'artillery-plugin-publish-metrics@2.9.0', null ]
+866 verbose cache add spec artillery-plugin-publish-metrics@2.9.0
+867 silly cache add parsed spec Result {
+867 silly cache add   raw: 'artillery-plugin-publish-metrics@2.9.0',
+867 silly cache add   scope: null,
+867 silly cache add   escapedName: 'artillery-plugin-publish-metrics',
+867 silly cache add   name: 'artillery-plugin-publish-metrics',
+867 silly cache add   rawSpec: '2.9.0',
+867 silly cache add   spec: '2.9.0',
+867 silly cache add   type: 'version' }
+868 silly addNamed artillery-plugin-publish-metrics@2.9.0
+869 verbose addNamed "2.9.0" is a plain semver version for artillery-plugin-publish-metrics
+870 silly mapToRegistry name artillery-plugin-publish-metrics
+871 silly mapToRegistry using default registry
+872 silly mapToRegistry registry https://registry.npmjs.org/
+873 silly mapToRegistry data Result {
+873 silly mapToRegistry   raw: 'artillery-plugin-publish-metrics',
+873 silly mapToRegistry   scope: null,
+873 silly mapToRegistry   escapedName: 'artillery-plugin-publish-metrics',
+873 silly mapToRegistry   name: 'artillery-plugin-publish-metrics',
+873 silly mapToRegistry   rawSpec: '',
+873 silly mapToRegistry   spec: 'latest',
+873 silly mapToRegistry   type: 'tag' }
+874 silly mapToRegistry uri https://registry.npmjs.org/artillery-plugin-publish-metrics
+875 verbose addNameVersion registry:https://registry.npmjs.org/artillery-plugin-publish-metrics not in flight; fetching
+876 silly resolveWithNewModule artillery-plugin-expect@2.3.3 checking installable status
+877 silly cache add args [ 'artillery-plugin-expect@2.3.3', null ]
+878 verbose cache add spec artillery-plugin-expect@2.3.3
+879 silly cache add parsed spec Result {
+879 silly cache add   raw: 'artillery-plugin-expect@2.3.3',
+879 silly cache add   scope: null,
+879 silly cache add   escapedName: 'artillery-plugin-expect',
+879 silly cache add   name: 'artillery-plugin-expect',
+879 silly cache add   rawSpec: '2.3.3',
+879 silly cache add   spec: '2.3.3',
+879 silly cache add   type: 'version' }
+880 silly addNamed artillery-plugin-expect@2.3.3
+881 verbose addNamed "2.3.3" is a plain semver version for artillery-plugin-expect
+882 silly mapToRegistry name artillery-plugin-expect
+883 silly mapToRegistry using default registry
+884 silly mapToRegistry registry https://registry.npmjs.org/
+885 silly mapToRegistry data Result {
+885 silly mapToRegistry   raw: 'artillery-plugin-expect',
+885 silly mapToRegistry   scope: null,
+885 silly mapToRegistry   escapedName: 'artillery-plugin-expect',
+885 silly mapToRegistry   name: 'artillery-plugin-expect',
+885 silly mapToRegistry   rawSpec: '',
+885 silly mapToRegistry   spec: 'latest',
+885 silly mapToRegistry   type: 'tag' }
+886 silly mapToRegistry uri https://registry.npmjs.org/artillery-plugin-expect
+887 verbose addNameVersion registry:https://registry.npmjs.org/artillery-plugin-expect not in flight; fetching
+888 silly resolveWithNewModule artillery-plugin-ensure@1.3.0 checking installable status
+889 silly cache add args [ 'artillery-plugin-ensure@1.3.0', null ]
+890 verbose cache add spec artillery-plugin-ensure@1.3.0
+891 silly cache add parsed spec Result {
+891 silly cache add   raw: 'artillery-plugin-ensure@1.3.0',
+891 silly cache add   scope: null,
+891 silly cache add   escapedName: 'artillery-plugin-ensure',
+891 silly cache add   name: 'artillery-plugin-ensure',
+891 silly cache add   rawSpec: '1.3.0',
+891 silly cache add   spec: '1.3.0',
+891 silly cache add   type: 'version' }
+892 silly addNamed artillery-plugin-ensure@1.3.0
+893 verbose addNamed "1.3.0" is a plain semver version for artillery-plugin-ensure
+894 silly mapToRegistry name artillery-plugin-ensure
+895 silly mapToRegistry using default registry
+896 silly mapToRegistry registry https://registry.npmjs.org/
+897 silly mapToRegistry data Result {
+897 silly mapToRegistry   raw: 'artillery-plugin-ensure',
+897 silly mapToRegistry   scope: null,
+897 silly mapToRegistry   escapedName: 'artillery-plugin-ensure',
+897 silly mapToRegistry   name: 'artillery-plugin-ensure',
+897 silly mapToRegistry   rawSpec: '',
+897 silly mapToRegistry   spec: 'latest',
+897 silly mapToRegistry   type: 'tag' }
+898 silly mapToRegistry uri https://registry.npmjs.org/artillery-plugin-ensure
+899 verbose addNameVersion registry:https://registry.npmjs.org/artillery-plugin-ensure not in flight; fetching
+900 silly resolveWithNewModule artillery-plugin-metrics-by-endpoint@1.2.0 checking installable status
+901 silly cache add args [ 'artillery-plugin-metrics-by-endpoint@1.2.0', null ]
+902 verbose cache add spec artillery-plugin-metrics-by-endpoint@1.2.0
+903 silly cache add parsed spec Result {
+903 silly cache add   raw: 'artillery-plugin-metrics-by-endpoint@1.2.0',
+903 silly cache add   scope: null,
+903 silly cache add   escapedName: 'artillery-plugin-metrics-by-endpoint',
+903 silly cache add   name: 'artillery-plugin-metrics-by-endpoint',
+903 silly cache add   rawSpec: '1.2.0',
+903 silly cache add   spec: '1.2.0',
+903 silly cache add   type: 'version' }
+904 silly addNamed artillery-plugin-metrics-by-endpoint@1.2.0
+905 verbose addNamed "1.2.0" is a plain semver version for artillery-plugin-metrics-by-endpoint
+906 silly mapToRegistry name artillery-plugin-metrics-by-endpoint
+907 silly mapToRegistry using default registry
+908 silly mapToRegistry registry https://registry.npmjs.org/
+909 silly mapToRegistry data Result {
+909 silly mapToRegistry   raw: 'artillery-plugin-metrics-by-endpoint',
+909 silly mapToRegistry   scope: null,
+909 silly mapToRegistry   escapedName: 'artillery-plugin-metrics-by-endpoint',
+909 silly mapToRegistry   name: 'artillery-plugin-metrics-by-endpoint',
+909 silly mapToRegistry   rawSpec: '',
+909 silly mapToRegistry   spec: 'latest',
+909 silly mapToRegistry   type: 'tag' }
+910 silly mapToRegistry uri https://registry.npmjs.org/artillery-plugin-metrics-by-endpoint
+911 verbose addNameVersion registry:https://registry.npmjs.org/artillery-plugin-metrics-by-endpoint not in flight; fetching
+912 silly resolveWithNewModule @oclif/plugin-not-found@2.4.3 checking installable status
+913 silly cache add args [ '@oclif/plugin-not-found@^2.3.1', null ]
+914 verbose cache add spec @oclif/plugin-not-found@^2.3.1
+915 silly cache add parsed spec Result {
+915 silly cache add   raw: '@oclif/plugin-not-found@^2.3.1',
+915 silly cache add   scope: '@oclif',
+915 silly cache add   escapedName: '@oclif%2fplugin-not-found',
+915 silly cache add   name: '@oclif/plugin-not-found',
+915 silly cache add   rawSpec: '^2.3.1',
+915 silly cache add   spec: '>=2.3.1 <3.0.0',
+915 silly cache add   type: 'range' }
+916 silly addNamed @oclif/plugin-not-found@>=2.3.1 <3.0.0
+917 verbose addNamed ">=2.3.1 <3.0.0" is a valid semver range for @oclif/plugin-not-found
+918 silly addNameRange { name: '@oclif/plugin-not-found',
+918 silly addNameRange   range: '>=2.3.1 <3.0.0',
+918 silly addNameRange   hasData: false }
+919 silly mapToRegistry name @oclif/plugin-not-found
+920 silly mapToRegistry scope (from package name) @oclif
+921 verbose mapToRegistry no registry URL found in name for scope @oclif
+922 silly mapToRegistry using default registry
+923 silly mapToRegistry registry https://registry.npmjs.org/
+924 silly mapToRegistry data Result {
+924 silly mapToRegistry   raw: '@oclif/plugin-not-found',
+924 silly mapToRegistry   scope: '@oclif',
+924 silly mapToRegistry   escapedName: '@oclif%2fplugin-not-found',
+924 silly mapToRegistry   name: '@oclif/plugin-not-found',
+924 silly mapToRegistry   rawSpec: '',
+924 silly mapToRegistry   spec: 'latest',
+924 silly mapToRegistry   type: 'tag' }
+925 silly mapToRegistry uri https://registry.npmjs.org/@oclif%2fplugin-not-found
+926 verbose addNameRange registry:https://registry.npmjs.org/@oclif%2fplugin-not-found not in flight; fetching
+927 silly resolveWithNewModule @aws-sdk/credential-providers@3.485.0 checking installable status
+928 silly cache add args [ '@aws-sdk/credential-providers@^3.127.0', null ]
+929 verbose cache add spec @aws-sdk/credential-providers@^3.127.0
+930 silly cache add parsed spec Result {
+930 silly cache add   raw: '@aws-sdk/credential-providers@^3.127.0',
+930 silly cache add   scope: '@aws-sdk',
+930 silly cache add   escapedName: '@aws-sdk%2fcredential-providers',
+930 silly cache add   name: '@aws-sdk/credential-providers',
+930 silly cache add   rawSpec: '^3.127.0',
+930 silly cache add   spec: '>=3.127.0 <4.0.0',
+930 silly cache add   type: 'range' }
+931 silly addNamed @aws-sdk/credential-providers@>=3.127.0 <4.0.0
+932 verbose addNamed ">=3.127.0 <4.0.0" is a valid semver range for @aws-sdk/credential-providers
+933 silly addNameRange { name: '@aws-sdk/credential-providers',
+933 silly addNameRange   range: '>=3.127.0 <4.0.0',
+933 silly addNameRange   hasData: false }
+934 silly mapToRegistry name @aws-sdk/credential-providers
+935 silly mapToRegistry scope (from package name) @aws-sdk
+936 verbose mapToRegistry no registry URL found in name for scope @aws-sdk
+937 silly mapToRegistry using default registry
+938 silly mapToRegistry registry https://registry.npmjs.org/
+939 silly mapToRegistry data Result {
+939 silly mapToRegistry   raw: '@aws-sdk/credential-providers',
+939 silly mapToRegistry   scope: '@aws-sdk',
+939 silly mapToRegistry   escapedName: '@aws-sdk%2fcredential-providers',
+939 silly mapToRegistry   name: '@aws-sdk/credential-providers',
+939 silly mapToRegistry   rawSpec: '',
+939 silly mapToRegistry   spec: 'latest',
+939 silly mapToRegistry   type: 'tag' }
+940 silly mapToRegistry uri https://registry.npmjs.org/@aws-sdk%2fcredential-providers
+941 verbose addNameRange registry:https://registry.npmjs.org/@aws-sdk%2fcredential-providers not in flight; fetching
+942 silly resolveWithNewModule @artilleryio/int-core@2.2.2 checking installable status
+943 silly cache add args [ '@artilleryio/int-core@2.2.2', null ]
+944 verbose cache add spec @artilleryio/int-core@2.2.2
+945 silly cache add parsed spec Result {
+945 silly cache add   raw: '@artilleryio/int-core@2.2.2',
+945 silly cache add   scope: '@artilleryio',
+945 silly cache add   escapedName: '@artilleryio%2fint-core',
+945 silly cache add   name: '@artilleryio/int-core',
+945 silly cache add   rawSpec: '2.2.2',
+945 silly cache add   spec: '2.2.2',
+945 silly cache add   type: 'version' }
+946 silly addNamed @artilleryio/int-core@2.2.2
+947 verbose addNamed "2.2.2" is a plain semver version for @artilleryio/int-core
+948 silly mapToRegistry name @artilleryio/int-core
+949 silly mapToRegistry scope (from package name) @artilleryio
+950 verbose mapToRegistry no registry URL found in name for scope @artilleryio
+951 silly mapToRegistry using default registry
+952 silly mapToRegistry registry https://registry.npmjs.org/
+953 silly mapToRegistry data Result {
+953 silly mapToRegistry   raw: '@artilleryio/int-core',
+953 silly mapToRegistry   scope: '@artilleryio',
+953 silly mapToRegistry   escapedName: '@artilleryio%2fint-core',
+953 silly mapToRegistry   name: '@artilleryio/int-core',
+953 silly mapToRegistry   rawSpec: '',
+953 silly mapToRegistry   spec: 'latest',
+953 silly mapToRegistry   type: 'tag' }
+954 silly mapToRegistry uri https://registry.npmjs.org/@artilleryio%2fint-core
+955 verbose addNameVersion registry:https://registry.npmjs.org/@artilleryio%2fint-core not in flight; fetching
+956 silly resolveWithNewModule @oclif/plugin-help@5.2.20 checking installable status
+957 silly cache add args [ '@oclif/plugin-help@^5.2.11', null ]
+958 verbose cache add spec @oclif/plugin-help@^5.2.11
+959 silly cache add parsed spec Result {
+959 silly cache add   raw: '@oclif/plugin-help@^5.2.11',
+959 silly cache add   scope: '@oclif',
+959 silly cache add   escapedName: '@oclif%2fplugin-help',
+959 silly cache add   name: '@oclif/plugin-help',
+959 silly cache add   rawSpec: '^5.2.11',
+959 silly cache add   spec: '>=5.2.11 <6.0.0',
+959 silly cache add   type: 'range' }
+960 silly addNamed @oclif/plugin-help@>=5.2.11 <6.0.0
+961 verbose addNamed ">=5.2.11 <6.0.0" is a valid semver range for @oclif/plugin-help
+962 silly addNameRange { name: '@oclif/plugin-help',
+962 silly addNameRange   range: '>=5.2.11 <6.0.0',
+962 silly addNameRange   hasData: false }
+963 silly mapToRegistry name @oclif/plugin-help
+964 silly mapToRegistry scope (from package name) @oclif
+965 verbose mapToRegistry no registry URL found in name for scope @oclif
+966 silly mapToRegistry using default registry
+967 silly mapToRegistry registry https://registry.npmjs.org/
+968 silly mapToRegistry data Result {
+968 silly mapToRegistry   raw: '@oclif/plugin-help',
+968 silly mapToRegistry   scope: '@oclif',
+968 silly mapToRegistry   escapedName: '@oclif%2fplugin-help',
+968 silly mapToRegistry   name: '@oclif/plugin-help',
+968 silly mapToRegistry   rawSpec: '',
+968 silly mapToRegistry   spec: 'latest',
+968 silly mapToRegistry   type: 'tag' }
+969 silly mapToRegistry uri https://registry.npmjs.org/@oclif%2fplugin-help
+970 verbose addNameRange registry:https://registry.npmjs.org/@oclif%2fplugin-help not in flight; fetching
+971 silly resolveWithNewModule @oclif/core@2.15.0 checking installable status
+972 silly cache add args [ '@oclif/core@^2.8.11', null ]
+973 verbose cache add spec @oclif/core@^2.8.11
+974 silly cache add parsed spec Result {
+974 silly cache add   raw: '@oclif/core@^2.8.11',
+974 silly cache add   scope: '@oclif',
+974 silly cache add   escapedName: '@oclif%2fcore',
+974 silly cache add   name: '@oclif/core',
+974 silly cache add   rawSpec: '^2.8.11',
+974 silly cache add   spec: '>=2.8.11 <3.0.0',
+974 silly cache add   type: 'range' }
+975 silly addNamed @oclif/core@>=2.8.11 <3.0.0
+976 verbose addNamed ">=2.8.11 <3.0.0" is a valid semver range for @oclif/core
+977 silly addNameRange { name: '@oclif/core', range: '>=2.8.11 <3.0.0', hasData: false }
+978 silly mapToRegistry name @oclif/core
+979 silly mapToRegistry scope (from package name) @oclif
+980 verbose mapToRegistry no registry URL found in name for scope @oclif
+981 silly mapToRegistry using default registry
+982 silly mapToRegistry registry https://registry.npmjs.org/
+983 silly mapToRegistry data Result {
+983 silly mapToRegistry   raw: '@oclif/core',
+983 silly mapToRegistry   scope: '@oclif',
+983 silly mapToRegistry   escapedName: '@oclif%2fcore',
+983 silly mapToRegistry   name: '@oclif/core',
+983 silly mapToRegistry   rawSpec: '',
+983 silly mapToRegistry   spec: 'latest',
+983 silly mapToRegistry   type: 'tag' }
+984 silly mapToRegistry uri https://registry.npmjs.org/@oclif%2fcore
+985 verbose addNameRange registry:https://registry.npmjs.org/@oclif%2fcore not in flight; fetching
+986 silly cache afterAdd @artilleryio/int-commons@2.0.4
+987 verbose afterAdd /Users/akshaylahudkar/.npm/@artilleryio/int-commons/2.0.4/package/package.json not in flight; writing
+988 verbose correctMkdir /Users/akshaylahudkar/.npm correctMkdir not in flight; initializing
+989 silly resolveWithNewModule debug@4.3.4 checking installable status
+990 silly cache add args [ 'debug@^4.3.1', null ]
+991 verbose cache add spec debug@^4.3.1
+992 silly cache add parsed spec Result {
+992 silly cache add   raw: 'debug@^4.3.1',
+992 silly cache add   scope: null,
+992 silly cache add   escapedName: 'debug',
+992 silly cache add   name: 'debug',
+992 silly cache add   rawSpec: '^4.3.1',
+992 silly cache add   spec: '>=4.3.1 <5.0.0',
+992 silly cache add   type: 'range' }
+993 silly addNamed debug@>=4.3.1 <5.0.0
+994 verbose addNamed ">=4.3.1 <5.0.0" is a valid semver range for debug
+995 silly addNameRange { name: 'debug', range: '>=4.3.1 <5.0.0', hasData: false }
+996 silly mapToRegistry name debug
+997 silly mapToRegistry using default registry
+998 silly mapToRegistry registry https://registry.npmjs.org/
+999 silly mapToRegistry data Result {
+999 silly mapToRegistry   raw: 'debug',
+999 silly mapToRegistry   scope: null,
+999 silly mapToRegistry   escapedName: 'debug',
+999 silly mapToRegistry   name: 'debug',
+999 silly mapToRegistry   rawSpec: '',
+999 silly mapToRegistry   spec: 'latest',
+999 silly mapToRegistry   type: 'tag' }
+1000 silly mapToRegistry uri https://registry.npmjs.org/debug
+1001 verbose addNameRange registry:https://registry.npmjs.org/debug not in flight; fetching
+1002 silly resolveWithNewModule ci-info@3.9.0 checking installable status
+1003 silly cache add args [ 'ci-info@^3.8.0', null ]
+1004 verbose cache add spec ci-info@^3.8.0
+1005 silly cache add parsed spec Result {
+1005 silly cache add   raw: 'ci-info@^3.8.0',
+1005 silly cache add   scope: null,
+1005 silly cache add   escapedName: 'ci-info',
+1005 silly cache add   name: 'ci-info',
+1005 silly cache add   rawSpec: '^3.8.0',
+1005 silly cache add   spec: '>=3.8.0 <4.0.0',
+1005 silly cache add   type: 'range' }
+1006 silly addNamed ci-info@>=3.8.0 <4.0.0
+1007 verbose addNamed ">=3.8.0 <4.0.0" is a valid semver range for ci-info
+1008 silly addNameRange { name: 'ci-info', range: '>=3.8.0 <4.0.0', hasData: false }
+1009 silly mapToRegistry name ci-info
+1010 silly mapToRegistry using default registry
+1011 silly mapToRegistry registry https://registry.npmjs.org/
+1012 silly mapToRegistry data Result {
+1012 silly mapToRegistry   raw: 'ci-info',
+1012 silly mapToRegistry   scope: null,
+1012 silly mapToRegistry   escapedName: 'ci-info',
+1012 silly mapToRegistry   name: 'ci-info',
+1012 silly mapToRegistry   rawSpec: '',
+1012 silly mapToRegistry   spec: 'latest',
+1012 silly mapToRegistry   type: 'tag' }
+1013 silly mapToRegistry uri https://registry.npmjs.org/ci-info
+1014 verbose addNameRange registry:https://registry.npmjs.org/ci-info not in flight; fetching
+1015 verbose stack Error: Missing required argument #1
+1015 verbose stack     at andLogAndFinish (/Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/lib/fetch-package-metadata.js:31:3)
+1015 verbose stack     at fetchPackageMetadata (/Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/lib/fetch-package-metadata.js:51:22)
+1015 verbose stack     at resolveWithNewModule (/Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/lib/install/deps.js:515:12)
+1015 verbose stack     at /Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/lib/install/deps.js:516:7
+1015 verbose stack     at /Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+1015 verbose stack     at /Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/lib/fetch-package-metadata.js:37:12
+1015 verbose stack     at addRequestedAndFinish (/Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/lib/fetch-package-metadata.js:67:5)
+1015 verbose stack     at returnAndAddMetadata (/Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/lib/fetch-package-metadata.js:121:7)
+1015 verbose stack     at pickVersionFromRegistryDocument (/Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/lib/fetch-package-metadata.js:138:20)
+1015 verbose stack     at /Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+1016 verbose cwd /Users/akshaylahudkar/assignments/NotesApp
+1017 error Darwin 23.2.0
+1018 error argv "/Users/akshaylahudkar/.nvm/versions/node/v6.7.0/bin/node" "/Users/akshaylahudkar/.nvm/versions/node/v6.7.0/bin/npm" "install" "artillery@latest"
+1019 error node v6.7.0
+1020 error npm  v3.10.3
+1021 error code EMISSINGARG
+1022 error typeerror Error: Missing required argument #1
+1022 error typeerror     at andLogAndFinish (/Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/lib/fetch-package-metadata.js:31:3)
+1022 error typeerror     at fetchPackageMetadata (/Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/lib/fetch-package-metadata.js:51:22)
+1022 error typeerror     at resolveWithNewModule (/Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/lib/install/deps.js:515:12)
+1022 error typeerror     at /Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/lib/install/deps.js:516:7
+1022 error typeerror     at /Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+1022 error typeerror     at /Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/lib/fetch-package-metadata.js:37:12
+1022 error typeerror     at addRequestedAndFinish (/Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/lib/fetch-package-metadata.js:67:5)
+1022 error typeerror     at returnAndAddMetadata (/Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/lib/fetch-package-metadata.js:121:7)
+1022 error typeerror     at pickVersionFromRegistryDocument (/Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/lib/fetch-package-metadata.js:138:20)
+1022 error typeerror     at /Users/akshaylahudkar/.nvm/versions/node/v6.7.0/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+1023 error typeerror This is an error with npm itself. Please report this error at:
+1023 error typeerror     <http://github.com/npm/npm/issues>
+1024 verbose exit [ 1, true ]

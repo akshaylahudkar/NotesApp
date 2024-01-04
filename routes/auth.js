@@ -40,7 +40,7 @@ const User = require("../models/User");
  */
 router.post(
   "/signup",
-  body("username").notEmpty().withMessage("Username is required"),
+  body("username").exists().notEmpty().withMessage("Username is required"),
   body("password").notEmpty().withMessage("Password is required"),
   body("email").notEmpty().withMessage("Email is required"),
   async (req, res) => {
@@ -89,20 +89,44 @@ router.post(
  *         description: Unauthorized - Wrong username or password
  */
 router.post(
-  "/login",
-  body("username").notEmpty().withMessage("Username is required"),
-  body("password").notEmpty().withMessage("Password is required"),
-  passport.authenticate("local", { session: false }),
-  (req, res) => {
-    const { username } = req.body;
-    const user = User.findOne({ username });
-
-    const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET, {
-      expiresIn: "1h",
-    });
-
-    res.json({ accessToken: token });
-  }
-);
-
+    '/login',
+    body('username').exists().notEmpty().withMessage('Username is required'),
+    body('password').exists().notEmpty().withMessage('Password is required'),
+    (req, res, next) => {
+      const errors = validationResult(req);
+      if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+      }
+  
+      passport.authenticate('local', { session: false }, async (err, user, info) => {
+        if (err) {
+          return res.status(500).json({ error: err.message });
+        }
+  
+        if (!user) {
+          return res.status(401).json({ message: 'Unauthorized - Wrong username or password' });
+        }
+  
+        req.logIn(user, { session: false }, async (err) => {
+          if (err) {
+            return next(err);
+          }
+  
+          try {
+            // Use your own logic to fetch user data or omit this part if not needed
+            // const foundUser = await User.findOne({ username: user.username });
+  
+            // Issue a JWT token
+            const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET, {
+              expiresIn: '1h',
+            });
+  
+            res.json({ accessToken: token });
+          } catch (err) {
+            res.status(500).json({ error: err.message });
+          }
+        });
+      })(req, res, next);
+    }
+  );
 module.exports = router;

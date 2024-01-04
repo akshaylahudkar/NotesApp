@@ -1,99 +1,82 @@
-const chai = require('chai');
-const chaiHttp = require('chai-http');
-const app = require('../server'); // Replace with the path to your Express app file
+const request = require('supertest');
+const bcrypt = require("bcryptjs");
+const app = require('../server'); // Update the path accordingly
 const User = require('../models/User');
-const { expect } = chai;
-
-chai.use(chaiHttp);
+ // Update the path accordingly
+ const mongoose = require('mongoose');
 
 describe('Authentication Routes', () => {
   beforeEach(async () => {
-    // Clear the database or perform any setup needed before each test
-    await User.deleteMany();
+    // Clear the user collection before each test
+    await User.deleteMany({});
   });
 
   describe('POST /api/auth/signup', () => {
     it('should create a new user account', async () => {
-      const userCredentials = {
-        username: 'testuser',
-        password: 'testpassword',
-        email: 'test@example.com',
-      };
-
-      const res = await chai
-        .request(app)
+      const response = await request(app)
         .post('/api/auth/signup')
-        .send(userCredentials);
+        .send({
+          username: 'testuser',
+          password: 'testpassword',
+          email: 'test@example.com',
+        });
 
-      expect(res).to.have.status(200);
-      expect(res.body).to.have.property('message').to.equal('User created successfully!');
+      expect(response.statusCode).toBe(200);
+      expect(response.body).toHaveProperty('message', 'User created successfully!');
     });
 
-    it('should handle validation error for missing fields', async () => {
-      const invalidUserCredentials = {
-        username: '',
-        password: '',
-        email: '',
-      };
+    it('should return validation error if required fields are missing', async () => {
+      const response = await request(app).post('/api/auth/signup').send({});
 
-      const res = await chai
-        .request(app)
-        .post('/api/auth/signup')
-        .send(invalidUserCredentials);
-
-      expect(res).to.have.status(400);
-      expect(res.body.errors).to.be.an('array');
+      expect(response.statusCode).toBe(400);
+      expect(response.body).toHaveProperty('errors');
     });
   });
 
   describe('POST /api/auth/login', () => {
-    it('should log in an existing user and return an access token', async () => {
-      // Create a user for testing
-      const hashedPassword = await bcrypt.hash('testpassword', 10);
-      const user = new User({ username: 'testuser', password: hashedPassword, email: 'test@example.com' });
-      await user.save();
-
-      const userCredentials = {
+    it('should log in and return an access token', async () => {
+      // Assuming you have a user already registered for testing
+      const existingUser = new User({
         username: 'testuser',
-        password: 'testpassword',
-      };
+        password: await bcrypt.hash('testpassword', 10),
+        email: 'test@example.com',
+      });
+      await existingUser.save();
 
-      const res = await chai
-        .request(app)
+      const response = await request(app)
         .post('/api/auth/login')
-        .send(userCredentials);
+        .send({
+          username: 'testuser',
+          password: 'testpassword',
+        });
 
-      expect(res).to.have.status(200);
-      expect(res.body).to.have.property('accessToken');
+      expect(response.statusCode).toBe(200);
+      expect(response.body).toHaveProperty('accessToken');
     });
 
-    it('should handle validation error for missing fields', async () => {
-      const invalidUserCredentials = {
-        username: '',
-        password: '',
-      };
-
-      const res = await chai
-        .request(app)
-        .post('/api/auth/login')
-        .send(invalidUserCredentials);
-
-      expect(res).to.have.status(400);
-      expect(res.body.errors).to.be.an('array');
+    it('should return validation error if required fields are missing', async () => {
+      const response = await request(app).post('/api/auth/login').send({});
+      console.log('res0', response.status, response.body)
+      expect(response.statusCode).toBe(400);
+      expect(response.body).toHaveProperty('errors');
     });
 
-    it('should handle unauthorized access for wrong credentials', async () => {
-      const wrongUserCredentials = {
-        username: 'nonexistentuser',
-        password: 'wrongpassword',
-      };
-
-      const res = await chai
-        .request(app)
+    it('should return unauthorized if wrong username or password', async () => {
+      const response = await request(app)
         .post('/api/auth/login')
-        .send(wrongUserCredentials);
+        .send({
+          username: 'nonexistentuser',
+          password: 'wrongpassword',
+        });
 
-      expect(res).to.have.status(401);
+      expect(response.statusCode).toBe(401);
+      expect(response.body).toHaveProperty('message', 'Unauthorized - Wrong username or password');
     });
   });
 });
+
+afterAll(async () => {
+    await new Promise((resolve) => setTimeout(() => resolve(), 500)); // avoid jest open handle error
+    app.closeServer();
+    mongoose.disconnect();
+  });
