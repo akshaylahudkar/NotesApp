@@ -11,12 +11,12 @@ const jwtOptions = {
     secretOrKey: process.env.JWT_SECRET,
     passReqToCallback: true,
   };
-  
+  //used for all authenticated APIs
   passport.use(new JwtStrategy(jwtOptions, async (req, jwt_payload, done) => {
     try {
       const user = await User.findById(jwt_payload.userId).exec();
       if (user) {
-        req.user = user; // Optionally attach the user to the request object
+        req.user = user; 
         return done(null, user);
       } else {
         return done(null, false);
@@ -33,6 +33,7 @@ const localOptions = {
   passwordField: 'password',
 };
 
+//used for login
 passport.use(new LocalStrategy(localOptions, async (username, password, done) => {
   try {
     const user = await User.findOne({ username });

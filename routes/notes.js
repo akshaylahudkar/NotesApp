@@ -341,14 +341,13 @@ router.post("/notes/:id/share", authenticateUser, async (req, res) => {
     const noteId = req.params.id;
     const { receiverId } = req.body;
 
-    const userToShareWith = await User.findById(receiverId);
 
+    const userToShareWith = await User.findById(receiverId);
     if (!userToShareWith) {
       return res
         .status(404)
         .json({ message: "User with specified ID not found." });
     }
-
     const noteToShare = await Note.findOne({ _id: noteId, ownerId: userId });
 
     if (!noteToShare) {

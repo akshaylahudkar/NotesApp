@@ -10,7 +10,7 @@ const router = express.Router();
 const jwt = require("jsonwebtoken");
 const passport = require("passport");
 const bcrypt = require("bcryptjs");
-const { body, validationResult } = require("express-validator");
+const { body, validationResult, cookie} = require("express-validator");
 const User = require("../models/User");
 
 /**
@@ -60,7 +60,13 @@ router.post(
       const user = new User({ username, password: hashedPassword, email });
       await user.save();
 
-      res.json({ message: "User created successfully!" });
+      user_res = {
+        'username':user.username,
+        'id':user.id,
+        'email':user.email
+      }
+
+      res.json({ user:user_res ,message: "User created successfully!" });
     } catch (err) {
       res.status(500).json({ error: err.message });
     }
@@ -120,56 +126,55 @@ router.post(
   
           // Generate access token
           const accessToken = generateAccessToken(user._id);
+
+          user_res = {
+            'username':user.username,
+            'id':user.id,
+            'email':user.email
+          }
   
           // Respond with access token and refresh token
-          res.json({ accessToken, refreshToken });
+          res.json({ user:user_res,accessToken, refreshToken });
         } catch (err) {
           res.status(500).json({ error: err.message });
         }
       })(req, res, next);
     }
   );
-/**
- * @swagger
- * /api/auth/refresh-token:
- *   post:
- *     summary: Refresh the access token using the refresh token
- *     tags: [Authentication]
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               refreshToken:
- *                 type: string
- *     responses:
- *       200:
- *         description: New access token generated successfully
- *       401:
- *         description: Invalid refresh token
- */
-router.post('/refresh-token', async (req, res) => {
-  const refreshToken = req.cookies.refreshToken;
 
-  if (!refreshToken) {
-    return res.status(401).json({ message: 'Refresh token is required.' });
+router.post(
+  '/refresh-token',
+  [
+    cookie('refreshToken').custom((value, { req }) => {
+      // Validate if refreshToken exists in cookies
+      if (!value) {
+        throw new Error('Refresh token is required in cookies.');
+      }
+
+      return value;
+    }),
+  ],
+  async (req, res) => {
+    const refreshToken = req.cookies.refreshToken; // Access it through req.cookies
+
+    if (!refreshToken) {
+      return res.status(401).json({ message: 'Refresh token is required.' });
+    }
+
+    // Validate the refresh token
+    try {
+      const decoded = jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET);
+
+      // Use the decoded information to generate a new access token
+      const newAccessToken = generateAccessToken(decoded.userId);
+
+      // Respond with the new access token
+      res.json({ accessToken: newAccessToken });
+    } catch (err) {
+      return res.status(401).json({ message: 'Invalid refresh token.' });
+    }
   }
-
-  // Validate the refresh token
-  try {
-    const decoded = jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET);
-
-    // Use the decoded information to generate a new access token
-    const newAccessToken = generateAccessToken(decoded.userId);
-
-    // Respond with the new access token
-    res.json({ accessToken: newAccessToken });
-  } catch (err) {
-    return res.status(401).json({ message: 'Invalid refresh token.' });
-  }
-});
+);
 
 // Function to generate a new access token
 function generateAccessToken(userId) {

@@ -11,7 +11,7 @@ services:
     ports:
       - 3004:3004
     environment:
-      - MONGODB_URI=mongodb://root:example@mongodb:27017
+      - MONGODB_URI=mongodb://root:bvehgkjbs^&*ghcveVVDA@mongodb:27017
     depends_on:
       - mongodb
 
@@ -20,7 +20,7 @@ services:
     restart: always
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_ROOT_PASSWORD: bvehgkjbs^&*ghcveVVDA
     ports:
       - 27017:27017
     volumes:

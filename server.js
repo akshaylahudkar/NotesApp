@@ -8,13 +8,10 @@ const swaggerUi = require("swagger-ui-express");
 const cors = require("cors");
 
 
-
-// Passport configuration
-const passport = require('./config/passport');
-
 // Load environment variables from .env file
 require("dotenv").config();
-
+// Passport configuration for authentication
+const passport = require('./config/passport');
 // Connect to MongoDB
 mongoose
   .connect(process.env.MONGODB_URI)
@@ -24,14 +21,15 @@ mongoose
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Define a rate limiter with a limit of 100 requests per minute
+// Rate limitor config; when there are multiple instances of the service running
+// we can configure Redis to store the counters 
 const limiter = rateLimit({
     windowMs: 60 * 1000, // 1 minute
-    max: 50, // limit each IP to 100 requests per windowMs
+    max: 50, // limit each IP to 100 requests per minute
     message: "Too many requests from this IP, please try again later.",
   });
 
-// Middleware
+// Setting up CORS to allow localhost to enable access from Docker 
 const allowedOrigins = ['http://localhost:'+port];
 app.use(cors({
     origin: function (origin, callback) {
@@ -103,8 +101,17 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
 // Start the server
 server = app.listen(port, () => console.log(`Server is running on port ${port}`));
 
-app.closeServer = () => {
-    server.close();
+app.closeServer =async () => {
+  if (server) {
+    await new Promise((resolve) => server.close(resolve));
+  }
   };
+
+process.on('SIGINT', async () => {
+    console.log('\nReceived SIGINT. Closing server and disconnecting from MongoDB...');
+    await app.closeServer();
+    await mongoose.disconnect();
+    process.exit();
+  });
 
 module.exports = app;
