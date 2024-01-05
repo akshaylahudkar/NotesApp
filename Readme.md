@@ -33,3 +33,9 @@ First stop the 'app' container which is running and keep the MongoDB container r
 run tests using 
 npm test
 
+
+### Rate Limiting
+Have kept a simple IP level rate limit of 50RPS
+But if there is a need to scale the server to multiple servers I could use Redis to store the counts.
+
+
