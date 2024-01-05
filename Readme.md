@@ -32,6 +32,8 @@ chmod +x ./load-test.sh && ./load-test.sh
 ### 5. How to run tests
 First stop the 'app' container which is running and keep the MongoDB container running
 run tests using 
+
+
 npm test
 
 
