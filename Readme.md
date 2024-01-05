@@ -1,5 +1,5 @@
 # Notes App
-
+![alt text](https://github.com/akshaylahudkar/NotesApp/blob/main/notesapp.jpg?raw=true)
 Brief description of your application.
 
 ## Prerequisites
